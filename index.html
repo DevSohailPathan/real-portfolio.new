@@ -1,0 +1,2839 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0%;
+            padding: 0%;
+            overflow-x: hidden;
+        }
+
+        /* main-container */
+        .main-container {
+            height: 100vh;
+            width: 100vw;
+        }
+
+        /* first-main */
+        .page-one {
+            height: 93%;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+        }
+
+        /* right-side-bar */
+        .right-sidebar {
+            height: 100%;
+            width: 18%;
+            position: fixed;
+        }
+
+        /* enjoy programing img */
+        .right-center-box {
+            height: 100%;
+            width: 100%;
+            background-color: #DDF5F7;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* enjoy-programing--img */
+        .enjoy-programing-img {
+            height: 28%;
+            width: 90%;
+            background-color: #DDF5F7;
+            margin-top: 20px;
+            border-radius: 100%;
+            margin-left: 5%;
+            box-shadow: 1px 1px 15px 1px black;
+        }
+
+        /*navigation-bar */
+        .navigation-bar {
+            height: 37%;
+            width: 60%;
+            background-color: rgb(98, 72, 149);
+            margin-left: 12%;
+            margin-top: 25%;
+        }
+
+        /* image */
+        .enjoy-cyrcle-img {
+            height: 100%;
+            width: 100%;
+            border-radius: 100%;
+        }
+
+        /* navigation button */
+        .button {
+            height: 25%;
+            width: 100%;
+        }
+
+        .png-img-small {
+            width: 15%;
+        }
+
+        .home {
+            background-color: #DDF5F7;
+        }
+
+        .about {
+            background-color: #DDF5F7;
+        }
+
+        .project {
+            background-color: #DDF5F7;
+        }
+
+        .contacts {
+            background-color: #DDF5F7;
+        }
+
+        /* button manage*/
+        .left-side-button {
+            margin-left: 10px;
+            font-size: 25px;
+            text-align: center;
+        }
+
+        /* only for mobile */
+        /* header */
+        .first-header-one {
+            height: 8%;
+            width: 100%;
+            background-color: #093d7c;
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+            color: white;
+            display: none;
+        }
+
+        /* only for mobile */
+        .first-header-two {
+            height: 8%;
+            width: 100%;
+            background-color: #093d7c;
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+            color: white;
+            display: none;
+        }
+
+        .my-namee {
+            font-size: 30px;
+            font-family: cursive;
+            margin-top: 20px;
+
+        }
+
+        /*-------------- left side bar  ----------- */
+        .left-sidebar {
+            height: 1-0%;
+            width: 82%;
+            background-color: #DDF5F7;
+            display: flex;
+            position: relative;
+            flex-direction: column;
+            left: 17.9%;
+        }
+
+        /* center-box  */
+        .center-box {
+            height: 78%;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            margin-top: 7%;
+            background-color: #b1d5e6;
+        }
+
+        /* center text */
+        .center-text {
+            height: 100%;
+            width: 70%;
+            background-color: #ffffff00;
+        }
+
+        .all-img {
+            height: 100%;
+            width: 100%;
+        }
+
+        /* developer name */
+        .hello-name {
+            font-size: 20px;
+            margin-top: 90px;
+            margin-left: 60px;
+            color: #000000;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .my-name {
+            font-size: 30px;
+            color: #050374;
+            font-family: cursive;
+        }
+
+        .developer-text {
+            font-size: 22px;
+            margin-left: 59px;
+            color: #000000;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        /* developer-text-big */
+        .my-text {
+            font-size: 22px;
+            margin-top: 4.5%;
+            margin-left: 60px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: #000000;
+            line-height: 39px;
+        }
+
+        /* developer-img */
+        .My-img {
+            height: 50%;
+            width: 25%;
+            background-color: rgb(216, 155, 144);
+            border-radius: 15px;
+            margin-top: 9%;
+            margin-right: 7%;
+            box-shadow: 2px 2px 19px 1px rgb(0, 0, 0);
+            text-align: center;
+        }
+
+        .developer-img-H-W {
+            height: 100%;
+            width: 100%;
+            border-radius: 15px;
+        }
+
+        /* experiance */
+        .experiance {
+            height: 20%;
+            width: 70%;
+            background-color: yellow;
+            margin-top: 38px;
+            display: flex;
+            flex-direction: row;
+            margin-left: 20px;
+            text-align: center;
+        }
+
+        /*  */
+        .big-text {
+            font-size: 40px;
+            color: #0c0392;
+        }
+
+        /* child */
+        .html {
+            height: 100%;
+            width: 33%;
+        }
+
+        .experi {
+            background-color: #b1d5e6;
+            box-shadow: 0 0 10px #000000, 0 0 15px rgb(0, 200, 255);
+        }
+
+        .my-project {
+            background-color: #b1d5e6;
+            box-shadow: 0 0 10px #000000, 0 0 15px rgb(0, 200, 255);
+            width: 34%;
+        }
+
+        .clind {
+            background-color: #b1d5e6;
+            box-shadow: 0 0 10px #000000, 0 0 15px rgb(0, 200, 255);
+        }
+
+        /* img */
+        .very-small-img {
+            height: 10%;
+            width: 30%;
+
+            border-radius: 10px;
+            margin-top: 25px;
+        }
+
+        .small-img-section {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            margin-left: 60px;
+        }
+
+        .small-img {
+            height: 75%;
+            width: 18%;
+            border-radius: 100%;
+        }
+
+        /* ----------about us page----------- */
+        .second-page {
+            height: 70%;
+            width: 100%;
+            background-color: #C0D9E5;
+            display: flex;
+            flex-direction: row;
+        }
+
+        /* right sidebar */
+        .right-sidebar-second {
+            height: 100%;
+            width: 18%;
+            background-color: #C0D9E5;
+        }
+
+        /* left-side-bar */
+        .left-sidebar-second {
+            height: 100%;
+            width: 82%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* header */
+        .second-header {
+            height: 10%;
+            width: 80%;
+            font-size: 30px;
+            color: rgb(0, 0, 0);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-left: 10%;
+        }
+
+        /* about us */
+        .about-us {
+            height: 30%;
+            width: 100%;
+            font-size: 20px;
+            margin-top: 20px;
+            color: #000875;
+            background-color: #C0D9E5;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            line-height: 35px;
+        }
+
+        /* rsume */
+        .resume {
+            height: 10%;
+            width: 40%;
+            background-color: #C0D9E5;
+            margin-left: 30%;
+            margin-top: 15px;
+        }
+
+        .resume-button {
+            height: 35px;
+            width: 110px;
+            border-radius: 7px;
+            font-size: 18px;
+            margin-left: 20px;
+            border: none;
+            color: #000000;
+            background-color: rgb(255, 183, 0);
+        }
+
+        .resume-contact-button {
+            height: 35px;
+            width: 95px;
+            border-radius: 7px;
+            font-size: 18px;
+            margin-left: 20px;
+            border: none;
+            color: #000000;
+            background-color: #1dd501;
+        }
+
+        /* my skill */
+        .my-skill {
+            height: 50%;
+            width: 100%;
+            background-color: #C0D9E5;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        /* my skill card */
+        .my {
+            height: 80%;
+            width: 25%;
+            border-radius: 15px;
+        }
+
+        .skill-card-one {
+            background-color: #ffffff;
+            transition: transform 0.9s, box-shadow 0.8s;
+            box-shadow: 0 0 10px #000000, 0 0 15px rgb(0, 200, 255);
+        }
+
+        .skill-card-one:hover {
+            transform: scale(1.1);
+
+        }
+
+        .skill-card-two {
+            background-color: #ffffff;
+            transition: transform 0.9s, box-shadow 0.8s;
+            box-shadow: 0 0 10px #000000, 0 0 15px rgb(0, 200, 255);
+        }
+
+        .skill-card-two:hover {
+            transform: scale(1.1);
+
+        }
+
+        .skill-card-three {
+            background-color: #ffffff;
+            transition: transform 0.9s, box-shadow 0.8s;
+            box-shadow: 0 0 10px #000000, 0 0 15px rgb(0, 200, 255);
+        }
+
+        .skill-card-three:hover {
+            transform: scale(1.1);
+
+        }
+
+        /* skill img */
+        .skill-img {
+            height: 25%;
+            margin-top: 5%;
+            width: 20%;
+        }
+
+        h3 {
+            color: rgb(0, 0, 0);
+        }
+
+        h4 {
+            color: rgb(0, 0, 0);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        /* --------------project-page --------page three----*/
+        .project-main {
+            height: 20%;
+            width: 100%;
+            background-color: rgb(221, 128, 240);
+            display: flex;
+            flex-direction: row;
+        }
+
+        /* navigation */
+        .third-box-one {
+            height: 100%;
+            width: 18%;
+            background-color: rgb(255, 255, 255);
+        }
+
+        /* cards page */
+        .third-box-two {
+            height: 100%;
+            width: 82%;
+            background-color: #C0D9E5;
+            text-align: center;
+        }
+
+        /* third-header */
+        .third-header {
+            height: 40%;
+            width: 50%;
+            background-color: #C0D9E5;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 30px;
+            color: rgb(0, 0, 0);
+            margin-left: 25%;
+        }
+
+        /* button-row all / project  */
+        .button-row {
+            height: 70%;
+            width: 100%;
+            background-color: #C0D9E5;
+        }
+
+        /* buttons all  */
+        .buttons {
+            margin-top: 25px;
+            margin-left: 25px;
+            height: 39%;
+            width: 13%;
+            font-size: 20px;
+            border-radius: 12px;
+            background-color: #085a67;
+            color: rgb(255, 255, 255);
+            border: none;
+        }
+
+        .buttons:hover {
+            background-color: #0cc6e3;
+        }
+
+        /* fourth cards page */
+        .fourth-main {
+            height: 90%;
+            width: 100%;
+            background-color: #C0D9E5;
+            display: flex;
+            flex-direction: row;
+        }
+
+        /* navigation bar */
+        .fourth-box-one {
+            height: 100%;
+            width: 18%;
+            background-color: rgb(255, 255, 255);
+        }
+
+        /* left side bar */
+
+        .fourth-box-two {
+            height: 100%;
+            width: 82%;
+            background-color: rgb(93, 46, 106);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .fourth-row-one {
+            height: 100%;
+            width: 100%;
+            background-color: #C0D9E5;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            justify-content: space-evenly;
+        }
+
+        .fourth-four-one {
+            height: 70%;
+            width: 25%;
+            background-color: rgb(0, 26, 255);
+            box-shadow: 0 0 10px #000000, 0 0 15px rgb(0, 144, 172);
+            margin-top: 3%;
+            transition: transform 0.9s, box-shadow 0.8s;
+
+        }
+
+        .fourth-four-one:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 10px #000000, 0 0 15px rgb(0, 144, 172);
+
+        }
+
+        .fourth-four-two {
+            height: 70%;
+            width: 25%;
+            background-color: rgb(187, 0, 249);
+            margin-top: 3%;
+            transition: transform 0.9s, box-shadow 0.8s;
+            box-shadow: 0 0 10px #000000, 0 0 15px rgb(0, 144, 172);
+
+        }
+
+        .fourth-four-two:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 10px #000000, 0 0 15px rgb(0, 144, 172);
+
+        }
+
+        .fourth-four-three {
+            height: 70%;
+            width: 25%;
+            background-color: rgb(241, 187, 187);
+            margin-top: 3%;
+            transition: transform 0.9s, box-shadow 0.8s;
+            box-shadow: 0 0 10px #000000, 0 0 15px rgb(0, 144, 172);
+
+        }
+
+        .fourth-four-three:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 10px #000000, 0 0 15px rgb(0, 144, 172);
+
+        }
+
+        /* card header */
+        .fourth-card-header {
+            height: 80%;
+            width: 100%;
+            background-color: #DDF5F7;
+
+        }
+
+
+
+        .fourth-card-footer {
+            height: 20%;
+            width: 100%;
+            background-color: #c2faff;
+        }
+
+        /*  */
+        .four-row-one {
+            height: 50%;
+            width: 100%;
+            background-color: tomato;
+        }
+
+        .four-row-two {
+            height: 50%;
+            width: 100%;
+            background-color: yellow;
+        }
+
+        .view-button {
+            background-color: #61a3c2;
+            height: 60%;
+            border-radius: 15px;
+            width: 35%;
+            border: none;
+            margin-left: 33%;
+            margin-top: 3%;
+            color: rgb(255, 255, 255);
+
+        }
+
+        /* fifth page */
+
+        .fifth-main {
+            height: 60%;
+            width: 100%;
+            background-color: #000000;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .fifth-box-one {
+            height: 100%;
+            width: 18%;
+            background-color: #82acc2;
+        }
+
+        .fifth-box-two {
+            height: 100%;
+            width: 82%;
+            background-color: #82acc2;
+        }
+
+        .contact-header {
+            height: 7%;
+            width: 70%;
+            background-color: #82acc2;
+            margin-top: 3%;
+            margin-left: 15%;
+            text-align: center;
+            font-size: 40px;
+            color: rgb(0, 0, 0);
+        }
+
+        /* child */
+        .fifth-row {
+            height: 30%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .onee {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            margin-top: 9%;
+        }
+
+        /* contact box */
+        .contact {
+            height: 85%;
+            width: 17%;
+        }
+
+        /* address */
+        .address {
+            background-color: #C0D9E5;
+            display: flex;
+            flex-direction: column;
+            transition-duration: 0.4s;
+            transition: 0.8s, transform 0.8s;
+            border-radius: 15px;
+            border: 1px solid rgb(0, 0, 0);
+        }
+
+        /* address hover */
+        .address:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 10px #000000, 0 0 15px rgb(0, 144, 172);
+        }
+
+        /* email */
+        .email {
+            background-color: #C0D9E5;
+            display: flex;
+            flex-direction: column;
+            transition-duration: 0.4s;
+            transition: 0.8s, transform 0.8s;
+            border-radius: 15px;
+            border: 1px solid rgb(0, 0, 0);
+        }
+
+        /* email hover */
+        .email:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 10px #000000, 0 0 15px rgb(0, 144, 172);
+        }
+
+        /* phone */
+        .phone {
+            background-color: #C0D9E5;
+            display: flex;
+            transition-duration: 0.4s;
+            flex-direction: column;
+            transition: 0.8s, transform 0.8s;
+            border-radius: 15px;
+            border: 1px solid rgb(0, 0, 0);
+        }
+
+        /* phone hover */
+        .phone:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 10px #000000, 0 0 15px rgb(0, 144, 172);
+        }
+
+        /* linkdein */
+        .linkdein {
+            background-color: #C0D9E5;
+            flex-direction: column;
+            transition-duration: 0.4s;
+            border: 1px solid rgb(0, 0, 0);
+            transition: 0.8s, transform 0.8s;
+            border-radius: 15px;
+        }
+
+        /* linkdein hover */
+        .linkdein:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 10px #000000, 0 0 15px rgb(0, 144, 172);
+        }
+
+        /* gethub */
+        .gethub {
+            background-color: #C0D9E5;
+            display: flex;
+            border: 1px solid rgb(0, 0, 0);
+            flex-direction: column;
+            transition-duration: 0.4s;
+            transition: 0.8s, transform 0.8s;
+            border-radius: 15px;
+        }
+
+        /* gethub hover */
+        .gethub:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 10px #000000, 0 0 15px rgb(0, 144, 172);
+        }
+
+        /* contact page img & text */
+        .c-image {
+            height: 50%;
+            width: 100%;
+            color: rgb(0, 187, 255);
+            text-align: center;
+            border-radius: 15px;
+        }
+
+        /* contact page text */
+        .c-text {
+            height: 50%;
+            width: 100%;
+            color: rgb(0, 187, 255);
+            border-radius: 15px;
+        }
+
+        /* contact img h w */
+        .contact-img {
+            height: 32px;
+            width: 15%;
+            margin-top: 2%;
+            border-radius: 15px;
+        }
+
+        /* top name */
+        .top {
+            text-align: center;
+            font-size: 15px;
+            color: rgb(0, 0, 0);
+        }
+
+        .bottom {
+            text-align: center;
+            font-size: 17px;
+            color: rgb(0, 0, 0);
+        }
+
+        a {
+            text-decoration: none;
+            color: #000000;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        /* footer */
+        .fifth-row-three {
+            height: 20%;
+            width: 100%;
+            background-color: #82acc2;
+            margin-top: 7%;
+            color: rgb(255, 255, 255);
+            font-size: 25px;
+            text-align: center;
+        }
+
+        @media (min-width:300px)and (max-width:450px) {
+            body {
+                margin: 0%;
+                padding: 0%;
+                overflow-x: hidden;
+            }
+
+            /* main-container */
+            .main-container {
+                height: 100vh;
+                width: 100vw;
+            }
+
+            /* first-main */
+            .page-one {
+                height: 165VH;
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+            }
+
+            /* right-side-bar */
+            .right-sidebar {
+                height: 100%;
+                width: 18%;
+                position: fixed;
+                display: none;
+
+            }
+
+            /* enjoy programing img */
+            .right-center-box {
+                height: 100%;
+                width: 100%;
+                background-color: #DDF5F7;
+                display: flex;
+                flex-direction: column;
+            }
+
+            /* enjoy-programing--img */
+            .enjoy-programing-img {
+                height: 28%;
+                width: 90%;
+                background-color: #DDF5F7;
+                margin-top: 20px;
+                border-radius: 100%;
+                margin-left: 5%;
+            }
+
+            /*navigation-bar */
+            .navigation-bar {
+                height: 37%;
+                width: 60%;
+                background-color: rgb(98, 72, 149);
+                margin-left: 12%;
+                margin-top: 25%;
+            }
+
+            /* image */
+            .enjoy-cyrcle-img {
+                height: 100%;
+                width: 100%;
+                border-radius: 100%;
+            }
+
+            /* navigation button */
+            .button {
+                height: 25%;
+                width: 100%;
+            }
+
+            .png-img-small {
+                width: 15%;
+            }
+
+            .home {
+                background-color: #DDF5F7;
+            }
+
+            .about {
+                background-color: #DDF5F7;
+            }
+
+            .project {
+                background-color: #DDF5F7;
+            }
+
+            .contacts {
+                background-color: #DDF5F7;
+            }
+
+            /* button manage*/
+            .left-side-button {
+                margin-left: 10px;
+                font-size: 25px;
+                opacity: 100%;
+                text-align: center;
+            }
+
+            /* hover */
+            .left-side-button:hover {
+                background-color: #ffffff;
+                border-radius: 15px;
+            }
+
+            /* only for mobile */
+            /* header */
+            .first-header-one {
+                height: 5%;
+                width: 100%;
+                background-color: #093d7c;
+                display: flex;
+                flex-direction: row;
+                color: white;
+
+
+            }
+
+            .header-my-name {
+                font-size: 30px;
+                margin-left: 100px;
+            }
+
+            /* only for mobile */
+            .first-header-two {
+                height: 4%;
+                width: 100%;
+                background-color: #669bdb43;
+                display: flex;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                flex-direction: row;
+                color: rgb(0, 0, 0);
+
+            }
+
+            .header-text {
+                font-size: 20px;
+                margin-left: 10px;
+            }
+
+            .my-namee {
+                font-size: 30px;
+                font-family: cursive;
+
+            }
+
+            /*-------------- left side bar  ----------- */
+            .left-sidebar {
+                height: 100%;
+                width: 100%;
+                background-color: #DDF5F7;
+                display: flex;
+                position: relative;
+                flex-direction: column;
+                left: 0px;
+            }
+
+            /* center-box  */
+            .center-box {
+                height: 280vh;
+                width: 100%;
+                display: flex;
+                flex-direction: column-reverse;
+                margin-top: 0%;
+                background-color: #b1d5e6;
+            }
+
+            /* center text */
+            .center-text {
+                height: 100%;
+                width: 100%;
+                background-color: #ffffff00;
+            }
+
+            .all-img {
+                height: 100%;
+                width: 100%;
+            }
+
+            /* developer name */
+            .hello-name {
+                font-size: 18px;
+                margin-top: 70px;
+                margin-left: 80px;
+                color: #000000;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+
+            .my-name {
+                font-size: 25px;
+                color: #050374;
+                font-family: cursive;
+            }
+
+            .developer-text {
+                font-size: 18px;
+                margin-left: 100px;
+                color: #000000;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+
+            /* developer-text-big */
+            .my-text {
+                font-size: 17px;
+                margin-top: 4.5%;
+                margin-left: 60px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                color: #000000;
+                line-height: 39px;
+            }
+
+            /* developer-img */
+            .My-img {
+                height: 30%;
+                width: 65%;
+                background-color: rgb(216, 155, 144);
+                border-radius: 15px;
+                margin-top: 8%;
+                margin-left: 17%;
+                box-shadow: 2px 2px 19px 1px rgb(0, 0, 0);
+                text-align: center;
+            }
+
+            .developer-img-H-W {
+                height: 100%;
+                width: 100%;
+                border-radius: 15px;
+            }
+
+            /* experiance */
+            .experiance {
+                height: 20%;
+                width: 100%;
+                background-color: none;
+                margin-top: 40px;
+                display: flex;
+                flex-direction: row;
+                margin-left: 0px;
+                text-align: center;
+            }
+
+            /*  */
+            .big-text {
+                font-size: 50px;
+                color: #0c0392;
+            }
+
+            /* child */
+            .html {
+                height: 100%;
+                width: 33%;
+            }
+
+            .experi {
+                background-color: #b1d5e6;
+                box-shadow: none;
+            }
+
+            .my-project {
+                background-color: #b1d5e6;
+                box-shadow: none;
+                width: 34%;
+            }
+
+            .clind {
+                background-color: #b1d5e6;
+                box-shadow: none;
+            }
+
+            /* img */
+            .very-small-img {
+                height: 10%;
+                width: 90%;
+                border-radius: 10px;
+                margin-top: 45px;
+                margin-left: 15px;
+            }
+
+            .small-img-section {
+                height: 100%;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                gap: 30px;
+                margin-left: 60px;
+            }
+
+            .small-img {
+                height: 75%;
+                width: 18%;
+                border-radius: 100%;
+            }
+
+            /* ----------about us page----------- */
+            .second-page {
+                height: 130vh;
+                width: 100%;
+                background-color: #C0D9E5;
+                display: flex;
+                flex-direction: row;
+            }
+
+            /* right sidebar */
+            .right-sidebar-second {
+                height: 100%;
+                width: 18%;
+                background-color: #C0D9E5;
+                display: none;
+            }
+
+            /* left-side-bar */
+            .left-sidebar-second {
+                height: 100%;
+                width: 100%;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+            }
+
+            /* header */
+            .second-header {
+                height: 10%;
+                width: 90%;
+                font-size: 30px;
+                color: rgb(0, 0, 0);
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+            }
+
+            /* about us */
+            .about-us {
+                height: 30%;
+                width: 100%;
+                font-size: 20px;
+                margin-top: 20px;
+                color: #000875;
+                background-color: #C0D9E5;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                line-height: 35px;
+            }
+
+            /* rsume */
+            .resume {
+                height: 10%;
+                width: 40%;
+                background-color: #C0D9E5;
+                margin-left: 30%;
+                margin-top: 15px;
+            }
+
+            .resume-button {
+                height: 35px;
+                width: 110px;
+                border-radius: 7px;
+                font-size: 18px;
+                margin-left: 0px;
+                border: none;
+                color: #000000;
+                background-color: rgb(255, 183, 0);
+            }
+
+            .resume-contact-button {
+                height: 35px;
+                width: 95px;
+                border-radius: 7px;
+                font-size: 18px;
+                margin-left: 0px;
+                border: none;
+                color: #000000;
+                background-color: #1dd501;
+                display: none;
+            }
+
+            /* my skill */
+            .my-skill {
+                height: 100%;
+                width: 100%;
+                background-color: #C0D9E5;
+                display: flex;
+                flex-direction: column;
+
+            }
+
+            /* my skill card */
+            .my {
+                height: 30%;
+                width: 55%;
+                border-radius: 15px;
+            }
+
+            .skill-card-one {
+                background-color: #ffffff;
+                transition: transform 0.9s, box-shadow 0.8s;
+                box-shadow: 0 0 10px #000000, 0 0 15px rgb(0, 200, 255);
+            }
+
+            .skill-card-one:hover {
+                transform: scale(1.1);
+
+            }
+
+            .skill-card-two {
+                background-color: #ffffff;
+                transition: transform 0.9s, box-shadow 0.8s;
+                box-shadow: 0 0 10px #000000, 0 0 15px rgb(0, 200, 255);
+            }
+
+            .skill-card-two:hover {
+                transform: scale(1.1);
+
+            }
+
+            .skill-card-three {
+                background-color: #ffffff;
+                transition: transform 0.9s, box-shadow 0.8s;
+                box-shadow: 0 0 10px #000000, 0 0 15px rgb(0, 200, 255);
+            }
+
+            .skill-card-three:hover {
+                transform: scale(1.1);
+
+            }
+
+            /* skill img */
+            .skill-img {
+                height: 25%;
+                margin-top: 5%;
+                width: 20%;
+            }
+
+            h3 {
+                color: rgb(0, 0, 0);
+            }
+
+            h4 {
+                color: rgb(0, 0, 0);
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+
+            /* --------------project-page --------page three----*/
+            .project-main {
+                height: 30%;
+                width: 100%;
+                background-color: rgb(221, 128, 240);
+                display: flex;
+                flex-direction: row;
+
+            }
+
+            /* navigation */
+            .third-box-one {
+                height: 100%;
+                width: 100%;
+                background-color: rgb(255, 255, 255);
+                display: none;
+            }
+
+            /* cards page */
+            .third-box-two {
+                height: 100%;
+                width: 100%;
+                background-color: #C0D9E5;
+
+            }
+
+            /* third-header */
+            .third-header {
+                height: 20%;
+                width: 50%;
+                background-color: #C0D9E5;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 30px;
+                color: rgb(0, 0, 0);
+                margin-left: 25%;
+                margin-top: 5%;
+            }
+
+            /* button-row all / project  */
+            .button-row {
+                height: 40%;
+                width: 100%;
+                background-color: #C0D9E5;
+            }
+
+            /* buttons all  */
+            .buttons {
+                height: 39%;
+                width: 30%;
+                font-size: 17px;
+                border-radius: 12px;
+                background-color: rgb(96, 175, 244);
+                color: rgb(255, 255, 255);
+                margin-top: 20px;
+                margin-right: 15%;
+                border: none;
+            }
+
+            .buttons:hover {
+                background-color: #0004ff;
+            }
+
+            /* fourth cards page */
+            .fourth-main {
+                height: 200vh;
+                width: 100%;
+                background-color: #C0D9E5;
+                display: flex;
+                flex-direction: column;
+            }
+
+            /* navigation bar */
+            .fourth-box-one {
+                height: 100%;
+                width: 18%;
+                background-color: rgb(255, 255, 255);
+                display: none;
+            }
+
+            /* left side bar */
+
+            .fourth-box-two {
+                height: 100%;
+                width: 100%;
+                background-color: rgb(93, 46, 106);
+                display: flex;
+                flex-direction: column;
+            }
+
+            .fourth-row-one {
+                height: 100%;
+                width: 100%;
+                background-color: #C0D9E5;
+                display: flex;
+                flex-direction: column;
+
+
+            }
+
+            .fourth-four-one {
+                height: 60%;
+                width: 57%;
+                background-color: #C0D9E5;
+                margin-top: 3%;
+                transition: transform 0.9s, box-shadow 0.8s;
+                margin-left: 90px;
+                border: 2px solid black;
+
+
+            }
+
+            .fourth-four-one:hover {
+                transform: scale(1.1);
+
+            }
+
+            .fourth-four-two {
+                height: 60%;
+                width: 57%;
+                background-color: #C0D9E5;
+                margin-top: 3%;
+                transition: transform 0.9s, box-shadow 0.8s;
+                margin-left: 90px;
+                border: 2px solid black;
+
+
+            }
+
+            .fourth-four-two:hover {
+                transform: scale(1.1);
+
+            }
+
+            .fourth-four-three {
+                height: 60%;
+                width: 57%;
+                background-color: #C0D9E5;
+                margin-top: 3%;
+                transition: transform 0.9s, box-shadow 0.8s;
+                margin-left: 90px;
+                border: 2px solid black;
+
+            }
+
+            .fourth-four-three:hover {
+                transform: scale(1.1);
+
+            }
+
+            /* card header */
+            .fourth-card-header {
+                height: 82%;
+                width: 100%;
+                background-color: #DDF5F7;
+
+            }
+
+
+
+            .fourth-card-footer {
+                height: 18%;
+                width: 100%;
+                background-color: #c2faff;
+            }
+
+            /*  */
+            .four-row-one {
+                height: 50%;
+                width: 100%;
+                background-color: tomato;
+            }
+
+            .four-row-two {
+                height: 50%;
+                width: 100%;
+                background-color: yellow;
+            }
+
+            .view-button {
+                background-color: #61a3c2;
+                height: 60%;
+                border-radius: 15px;
+                width: 45%;
+                border: none;
+                margin-left: 33%;
+                margin-top: 3%;
+                color: rgb(255, 255, 255);
+
+            }
+
+            /* fifth page */
+
+            .fifth-main {
+                height: 100%;
+                width: 100%;
+                background-color: #000000;
+                display: flex;
+                flex-direction: row;
+            }
+
+            .fifth-box-one {
+                height: 100%;
+                width: 18%;
+                background-color: #6c9bdd;
+                display: none;
+            }
+
+            .fifth-box-two {
+                height: 100%;
+                width: 100%;
+                background-color: #82acc2;
+            }
+
+            .contact-header {
+                height: 7%;
+                width: 70%;
+                background-color: #82acc2;
+                margin-top: 3%;
+                margin-left: 15%;
+                text-align: center;
+                font-size: 40px;
+                color: rgb(0, 0, 0);
+
+            }
+
+            /* child */
+            .fifth-row {
+                height: 80%;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .onee {
+                display: flex;
+                flex-direction: column;
+                margin-top: 9%;
+
+            }
+
+            /* contact box */
+            .contact {
+                height: 25%;
+                width: 57%;
+                margin-top: 10px;
+            }
+
+            /* address */
+            .address {
+                background-color: #C0D9E5;
+                display: flex;
+                flex-direction: column;
+                transition-duration: 0.4s;
+                transition: 0.8s, transform 0.8s;
+                border-radius: 15px;
+                border: 1px solid rgb(0, 0, 0);
+                margin-left: 24%;
+            }
+
+            /* address hover */
+            .address:hover {
+                transform: scale(1.1);
+                box-shadow: 0 0 10px #0004ff, 0 0 15px rgb(0, 0, 255);
+            }
+
+            /* email */
+            .email {
+                background-color: #C0D9E5;
+                display: flex;
+                flex-direction: column;
+                transition-duration: 0.4s;
+                transition: 0.8s, transform 0.8s;
+                border-radius: 15px;
+                margin-left: 24%;
+                border: 1px solid rgb(0, 0, 0);
+            }
+
+            /* email hover */
+            .email:hover {
+                transform: scale(1.1);
+                box-shadow: 0 0 10px #0004ff, 0 0 15px rgb(0, 0, 255);
+            }
+
+            /* phone */
+            .phone {
+                background-color: #C0D9E5;
+                display: flex;
+                transition-duration: 0.4s;
+                flex-direction: column;
+                margin-left: 24%;
+                transition: 0.8s, transform 0.8s;
+                border-radius: 15px;
+                border: 1px solid rgb(0, 0, 0);
+            }
+
+            /* phone hover */
+            .phone:hover {
+                transform: scale(1.1);
+                box-shadow: 0 0 10px #0004ff, 0 0 15px rgb(0, 0, 255);
+            }
+
+            /* linkdein */
+            .linkdein {
+                background-color: #C0D9E5;
+                flex-direction: column;
+                transition-duration: 0.4s;
+                border: 1px solid rgb(0, 0, 0);
+                transition: 0.8s, transform 0.8s;
+                margin-left: 24%;
+                border-radius: 15px;
+            }
+
+            /* linkdein hover */
+            .linkdein:hover {
+                transform: scale(1.1);
+                box-shadow: 0 0 10px #0004ff, 0 0 15px rgb(0, 0, 255);
+            }
+
+            /* gethub */
+            .gethub {
+                background-color: #C0D9E5;
+                display: flex;
+                border: 1px solid rgb(0, 0, 0);
+                flex-direction: column;
+                transition-duration: 0.4s;
+                transition: 0.8s, transform 0.8s;
+                margin-left: 24%;
+                border-radius: 15px;
+            }
+
+            /* gethub hover */
+            .gethub:hover {
+                transform: scale(1.1);
+                box-shadow: 0 0 10px #0004ff, 0 0 15px rgb(0, 0, 255);
+            }
+
+            /* contact page img & text */
+            .c-image {
+                height: 50%;
+                width: 100%;
+                color: rgb(0, 187, 255);
+                text-align: center;
+                border-radius: 15px;
+            }
+
+            /* contact page text */
+            .c-text {
+                height: 50%;
+                width: 100%;
+                color: rgb(0, 187, 255);
+                border-radius: 15px;
+            }
+
+            /* contact img h w */
+            .contact-img {
+                height: 32px;
+                width: 15%;
+                margin-top: 2%;
+                border-radius: 15px;
+            }
+
+            /* top name */
+            .top {
+                text-align: center;
+                font-size: 15px;
+                color: rgb(0, 0, 0);
+            }
+
+            .bottom {
+                text-align: center;
+                font-size: 17px;
+                color: rgb(0, 0, 0);
+            }
+
+            a {
+                text-decoration: none;
+                color: #000000;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+
+            /* footer */
+            .fifth-row-three {
+                height: 10%;
+                width: 100%;
+                background-color: #82acc2;
+                margin-top: 7%;
+                color: rgb(255, 247, 0);
+                font-size: 25px;
+                margin-right: 10px;
+
+            }
+
+            /* only for tab */
+
+        }
+
+        @media (min-width:450px)and (max-width:700px) {
+            body {
+                margin: 0%;
+                padding: 0%;
+                overflow-x: hidden;
+            }
+
+            /* main-container */
+            .main-container {
+                height: 100vh;
+                width: 100vw;
+            }
+
+            /* first-main */
+            .page-one {
+                height: 165VH;
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+            }
+
+            /* right-side-bar */
+            .right-sidebar {
+                height: 100%;
+                width: 18%;
+                position: fixed;
+                display: none;
+
+            }
+
+            /* enjoy programing img */
+            .right-center-box {
+                height: 100%;
+                width: 100%;
+                background-color: #DDF5F7;
+                display: flex;
+                flex-direction: column;
+            }
+
+            /* enjoy-programing--img */
+            .enjoy-programing-img {
+                height: 28%;
+                width: 90%;
+                background-color: #DDF5F7;
+                margin-top: 20px;
+                border-radius: 100%;
+                margin-left: 5%;
+            }
+
+            /*navigation-bar */
+            .navigation-bar {
+                height: 37%;
+                width: 60%;
+                background-color: rgb(98, 72, 149);
+                margin-left: 12%;
+                margin-top: 25%;
+            }
+
+            /* image */
+            .enjoy-cyrcle-img {
+                height: 100%;
+                width: 100%;
+                border-radius: 100%;
+            }
+
+            /* navigation button */
+            .button {
+                height: 25%;
+                width: 100%;
+            }
+
+            .png-img-small {
+                width: 15%;
+            }
+
+            .home {
+                background-color: #DDF5F7;
+            }
+
+            .about {
+                background-color: #DDF5F7;
+            }
+
+            .project {
+                background-color: #DDF5F7;
+            }
+
+            .contacts {
+                background-color: #DDF5F7;
+            }
+
+            /* button manage*/
+            .left-side-button {
+                margin-left: 10px;
+                font-size: 25px;
+                opacity: 100%;
+                text-align: center;
+            }
+
+            /* hover */
+            .left-side-button:hover {
+                background-color: #ffffff;
+                border-radius: 15px;
+            }
+
+            /* only for mobile */
+            /* header */
+            .first-header-one {
+                height: 5%;
+                width: 100%;
+                background-color: #093d7c;
+                display: flex;
+                flex-direction: row;
+                color: white;
+
+
+            }
+
+            .header-my-name {
+                font-size: 30px;
+                margin-left: 250px;
+            }
+
+            /* only for mobile */
+            .first-header-two {
+                height: 4%;
+                width: 100%;
+                background-color: #669bdb43;
+                display: flex;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                flex-direction: row;
+                color: rgb(0, 0, 0);
+
+            }
+
+            .header-text {
+                font-size: 26px;
+                margin-left: 62px;
+            }
+
+            .my-namee {
+                font-size: 30px;
+                font-family: cursive;
+
+            }
+
+            /*-------------- left side bar  ----------- */
+            .left-sidebar {
+                height: 100%;
+                width: 100%;
+                background-color: #DDF5F7;
+                display: flex;
+                position: relative;
+                flex-direction: column;
+                left: 0px;
+            }
+
+            /* center-box  */
+            .center-box {
+                height: 280vh;
+                width: 100%;
+                display: flex;
+                flex-direction: column-reverse;
+                margin-top: 0%;
+                background-color: #b1d5e6;
+            }
+
+            /* center text */
+            .center-text {
+                height: 100%;
+                width: 100%;
+                background-color: #ffffff00;
+            }
+
+            .all-img {
+                height: 100%;
+                width: 100%;
+            }
+
+            /* developer name */
+            .hello-name {
+                font-size: 38px;
+                margin-top: 100px;
+                margin-left: 160px;
+                color: #000000;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+
+            .my-name {
+                font-size: 35px;
+                color: #050374;
+                font-family: cursive;
+            }
+
+            .developer-text {
+                font-size: 28px;
+                margin-left: 190px;
+                color: #000000;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+
+            /* developer-text-big */
+            .my-text {
+                font-size: 27px;
+                margin-top: 9.5%;
+                margin-left: 140px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                color: #000000;
+                line-height: 39px;
+            }
+
+            /* developer-img */
+            .My-img {
+                height: 25%;
+                width: 60%;
+                background-color: rgb(216, 155, 144);
+                border-radius: 15px;
+                margin-top: 8%;
+                margin-left: 19%;
+                box-shadow: 2px 2px 19px 1px rgb(0, 0, 0);
+                text-align: center;
+            }
+
+            .developer-img-H-W {
+                height: 100%;
+                width: 100%;
+                border-radius: 15px;
+            }
+
+            /* experiance */
+            .experiance {
+                height: 20%;
+                width: 100%;
+                background-color: none;
+                margin-top: 110px;
+                display: flex;
+                flex-direction: row;
+                margin-left: 0px;
+                text-align: center;
+            }
+
+            /*  */
+            .big-text {
+                font-size: 90px;
+                color: #0c0392;
+            }
+
+            .experiance-text {
+                font-size: 30px;
+            }
+
+            /* child */
+            .html {
+                height: 100%;
+                width: 33%;
+            }
+
+            .experi {
+                background-color: #b1d5e6;
+                box-shadow: none;
+            }
+
+            .my-project {
+                background-color: #b1d5e6;
+                box-shadow: none;
+                width: 34%;
+            }
+
+            .clind {
+                background-color: #b1d5e6;
+                box-shadow: none;
+            }
+
+            /* img */
+            .very-small-img {
+                height: 10%;
+                width: 70%;
+                border-radius: 10px;
+                margin-top: 95px;
+                margin-left: 120px;
+            }
+
+            .small-img-section {
+                height: 100%;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                gap: 30px;
+                margin-left: 60px;
+            }
+
+            .small-img {
+                height: 75%;
+                width: 18%;
+                border-radius: 100%;
+            }
+
+            /* ----------about us page----------- */
+            .second-page {
+                height: 130vh;
+                width: 100%;
+                background-color: #C0D9E5;
+                display: flex;
+                flex-direction: row;
+            }
+
+            /* right sidebar */
+            .right-sidebar-second {
+                height: 100%;
+                width: 18%;
+                background-color: #C0D9E5;
+                display: none;
+            }
+
+            /* left-side-bar */
+            .left-sidebar-second {
+                height: 100%;
+                width: 100%;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+            }
+
+            /* header */
+            .second-header {
+                height: 10%;
+                width: 90%;
+                font-size: 50px;
+                color: rgb(0, 0, 0);
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+            }
+
+            /* about us */
+            .about-us {
+                height: 30%;
+                width: 100%;
+                font-size: 25px;
+                margin-top: 20px;
+                color: #000875;
+                background-color: #C0D9E5;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                line-height: 35px;
+            }
+
+            /* rsume */
+            .resume {
+                height: 10%;
+                width: 40%;
+                background-color: #C0D9E5;
+                margin-left: 30%;
+                margin-top: 15px;
+            }
+
+            .resume-button {
+                height: 45px;
+                width: 140px;
+                border-radius: 7px;
+                font-size: 23px;
+                margin-left: 0px;
+                border: none;
+                color: #000000;
+                background-color: rgb(255, 183, 0);
+            }
+
+            .resume-contact-button {
+                height: 35px;
+                width: 95px;
+                border-radius: 7px;
+                font-size: 18px;
+                margin-left: 0px;
+                border: none;
+                color: #000000;
+                background-color: #1dd501;
+                display: none;
+            }
+
+            /* my skill */
+            .my-skill {
+                height: 100%;
+                width: 100%;
+                background-color: #C0D9E5;
+                display: flex;
+                flex-direction: column;
+
+            }
+
+            /* my skill card */
+            .my {
+                height: 30%;
+                width: 55%;
+                border-radius: 15px;
+            }
+
+            .skill-card-one {
+                background-color: #ffffff;
+                transition: transform 0.9s, box-shadow 0.8s;
+                box-shadow: 0 0 10px #000000, 0 0 15px rgb(0, 200, 255);
+            }
+
+            .skill-card-one:hover {
+                transform: scale(1.1);
+
+            }
+
+            .skill-card-two {
+                background-color: #ffffff;
+                transition: transform 0.9s, box-shadow 0.8s;
+                box-shadow: 0 0 10px #000000, 0 0 15px rgb(0, 200, 255);
+            }
+
+            .skill-card-two:hover {
+                transform: scale(1.1);
+
+            }
+
+            .skill-card-three {
+                background-color: #ffffff;
+                transition: transform 0.9s, box-shadow 0.8s;
+                box-shadow: 0 0 10px #000000, 0 0 15px rgb(0, 200, 255);
+            }
+
+            .skill-card-three:hover {
+                transform: scale(1.1);
+
+            }
+
+            /* skill img */
+            .skill-img {
+                height: 25%;
+                margin-top: 5%;
+                width: 20%;
+            }
+
+            h3 {
+                color: rgb(0, 0, 0);
+            }
+
+            h4 {
+                color: rgb(0, 0, 0);
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+
+            /* --------------project-page --------page three----*/
+            .project-main {
+                height: 30%;
+                width: 100%;
+                background-color: rgb(221, 128, 240);
+                display: flex;
+                flex-direction: row;
+
+            }
+
+            /* navigation */
+            .third-box-one {
+                height: 100%;
+                width: 100%;
+                background-color: rgb(255, 255, 255);
+                display: none;
+            }
+
+            /* cards page */
+            .third-box-two {
+                height: 100%;
+                width: 100%;
+                background-color: #C0D9E5;
+
+            }
+
+            /* third-header */
+            .third-header {
+                height: 20%;
+                width: 50%;
+                background-color: #C0D9E5;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 30px;
+                color: rgb(0, 0, 0);
+                margin-left: 25%;
+                margin-top: 5%;
+            }
+
+            /* button-row all / project  */
+            .button-row {
+                height: 40%;
+                width: 100%;
+                background-color: #C0D9E5;
+            }
+
+            /* buttons all  */
+            .buttons {
+                height: 39%;
+                width: 30%;
+                font-size: 27px;
+                border-radius: 12px;
+                background-color: rgb(96, 175, 244);
+                color: rgb(255, 255, 255);
+                margin-top: 20px;
+                margin-right: 0%;
+                border: none;
+            }
+
+            .buttons:hover {
+                background-color: #0004ff;
+            }
+
+            /* fourth cards page */
+            .fourth-main {
+                height: 300vh;
+                width: 100%;
+                background-color: #C0D9E5;
+                display: flex;
+                flex-direction: column;
+            }
+
+            /* navigation bar */
+            .fourth-box-one {
+                height: 100%;
+                width: 18%;
+                background-color: rgb(255, 255, 255);
+                display: none;
+            }
+
+            /* left side bar */
+
+            .fourth-box-two {
+                height: 100%;
+                width: 100%;
+                background-color: rgb(93, 46, 106);
+                display: flex;
+                flex-direction: column;
+            }
+
+            .fourth-row-one {
+                height: 100%;
+                width: 100%;
+                background-color: #C0D9E5;
+                display: flex;
+                flex-direction: column;
+
+
+            }
+
+            .fourth-four-one {
+                height: 60%;
+                width: 57%;
+                background-color: #C0D9E5;
+                margin-top: 3%;
+                transition: transform 0.9s, box-shadow 0.8s;
+                margin-left: 150px;
+                border: 2px solid black;
+
+
+            }
+
+            .fourth-four-one:hover {
+                transform: scale(1.1);
+
+            }
+
+            .fourth-four-two {
+                height: 60%;
+                width: 57%;
+                background-color: #C0D9E5;
+                margin-top: 3%;
+                transition: transform 0.9s, box-shadow 0.8s;
+                margin-left: 150px;
+                border: 2px solid black;
+
+
+            }
+
+            .fourth-four-two:hover {
+                transform: scale(1.1);
+
+            }
+
+            .fourth-four-three {
+                height: 60%;
+                width: 57%;
+                background-color: #C0D9E5;
+                margin-top: 3%;
+                transition: transform 0.9s, box-shadow 0.8s;
+                margin-left: 150px;
+                border: 2px solid black;
+
+            }
+
+            .fourth-four-three:hover {
+                transform: scale(1.1);
+
+            }
+
+            /* card header */
+            .fourth-card-header {
+                height: 82%;
+                width: 100%;
+                background-color: #DDF5F7;
+
+            }
+
+
+
+            .fourth-card-footer {
+                height: 18%;
+                width: 100%;
+                background-color: #c2faff;
+            }
+
+            /*  */
+            .four-row-one {
+                height: 50%;
+                width: 100%;
+                background-color: tomato;
+            }
+
+            .four-row-two {
+                height: 50%;
+                width: 100%;
+                background-color: yellow;
+            }
+
+            .view-button {
+                background-color: #61a3c2;
+                height: 60%;
+                border-radius: 15px;
+                width: 45%;
+                border: none;
+                margin-left: 33%;
+                margin-top: 3%;
+                color: rgb(255, 255, 255);
+
+            }
+
+            /* fifth page */
+
+            .fifth-main {
+                height: 150vh;
+                width: 100%;
+                background-color: #000000;
+                display: flex;
+                flex-direction: row;
+            }
+
+            .fifth-box-one {
+                height: 100%;
+                width: 18%;
+                background-color: #6c9bdd;
+                display: none;
+            }
+
+            .fifth-box-two {
+                height: 100%;
+                width: 100%;
+                background-color: #82acc2;
+            }
+
+            .contact-header {
+                height: 7%;
+                width: 70%;
+                background-color: #82acc2;
+                margin-top: 3%;
+                margin-left: 15%;
+                text-align: center;
+                font-size: 40px;
+                color: rgb(0, 0, 0);
+
+            }
+
+            /* child */
+            .fifth-row {
+                height: 80%;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .onee {
+                display: flex;
+                flex-direction: column;
+                margin-top: 9%;
+
+            }
+
+            /* contact box */
+            .contact {
+                height: 25%;
+                width: 57%;
+                margin-top: 10px;
+            }
+
+            /* address */
+            .address {
+                background-color: #C0D9E5;
+                display: flex;
+                flex-direction: column;
+                transition-duration: 0.4s;
+                transition: 0.8s, transform 0.8s;
+                border-radius: 15px;
+                border: 1px solid rgb(0, 0, 0);
+                margin-left: 24%;
+            }
+
+            /* address hover */
+            .address:hover {
+                transform: scale(1.1);
+                box-shadow: 0 0 10px #0004ff, 0 0 15px rgb(0, 0, 255);
+            }
+
+            /* email */
+            .email {
+                background-color: #C0D9E5;
+                display: flex;
+                flex-direction: column;
+                transition-duration: 0.4s;
+                transition: 0.8s, transform 0.8s;
+                border-radius: 15px;
+                margin-left: 24%;
+                border: 1px solid rgb(0, 0, 0);
+            }
+
+            /* email hover */
+            .email:hover {
+                transform: scale(1.1);
+                box-shadow: 0 0 10px #0004ff, 0 0 15px rgb(0, 0, 255);
+            }
+
+            /* phone */
+            .phone {
+                background-color: #C0D9E5;
+                display: flex;
+                transition-duration: 0.4s;
+                flex-direction: column;
+                margin-left: 24%;
+                transition: 0.8s, transform 0.8s;
+                border-radius: 15px;
+                border: 1px solid rgb(0, 0, 0);
+            }
+
+            /* phone hover */
+            .phone:hover {
+                transform: scale(1.1);
+                box-shadow: 0 0 10px #0004ff, 0 0 15px rgb(0, 0, 255);
+            }
+
+            /* linkdein */
+            .linkdein {
+                background-color: #C0D9E5;
+                flex-direction: column;
+                transition-duration: 0.4s;
+                border: 1px solid rgb(0, 0, 0);
+                transition: 0.8s, transform 0.8s;
+                margin-left: 24%;
+                border-radius: 15px;
+            }
+
+            /* linkdein hover */
+            .linkdein:hover {
+                transform: scale(1.1);
+                box-shadow: 0 0 10px #0004ff, 0 0 15px rgb(0, 0, 255);
+            }
+
+            /* gethub */
+            .gethub {
+                background-color: #C0D9E5;
+                display: flex;
+                border: 1px solid rgb(0, 0, 0);
+                flex-direction: column;
+                transition-duration: 0.4s;
+                transition: 0.8s, transform 0.8s;
+                margin-left: 24%;
+                border-radius: 15px;
+            }
+
+            /* gethub hover */
+            .gethub:hover {
+                transform: scale(1.1);
+                box-shadow: 0 0 10px #0004ff, 0 0 15px rgb(0, 0, 255);
+            }
+
+            /* contact page img & text */
+            .c-image {
+                height: 50%;
+                width: 100%;
+                color: rgb(0, 187, 255);
+                text-align: center;
+                border-radius: 15px;
+            }
+
+            /* contact page text */
+            .c-text {
+                height: 50%;
+                width: 100%;
+                color: rgb(0, 187, 255);
+                border-radius: 15px;
+            }
+
+            /* contact img h w */
+            .contact-img {
+                height: 52px;
+                width: 15%;
+                margin-top: 2%;
+                border-radius: 15px;
+            }
+
+            /* top name */
+            .top {
+                text-align: center;
+                font-size: 30px;
+                color: rgb(0, 0, 0);
+            }
+
+            .bottom {
+                text-align: center;
+                font-size: 30px;
+                color: rgb(0, 0, 0);
+            }
+
+            a {
+                text-decoration: none;
+                color: #000000;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+
+            /* footer */
+            .fifth-row-three {
+                height: 10%;
+                width: 100%;
+                background-color: #82acc2;
+                margin-top: 7%;
+                color: rgb(255, 247, 0);
+                font-size: 25px;
+                margin-right: 10px;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- first page -->
+    <!-- main-container -->
+    <div class="main-container">
+        <div class="page-one" id="home">
+            <!-- sidebar -->
+
+            <div class="right-sidebar">
+
+                <div class="right-center-box">
+                    <div class="enjoy-programing-img"><img class="enjoy-cyrcle-img"
+                            src="https://pbs.twimg.com/profile_images/1829166084626210816/c6sR7XYC_400x400.png" alt="">
+                    </div>
+                    <!-- navigation bar -->
+                    <div class="navigation-bar">
+                        <div class="button home">
+                            <div class="left-side-button"><span><img class="png-img-small"
+                                        src="https://cdn-icons-png.flaticon.com/512/25/25694.png" alt=""></span>
+                                <span><a href="#home"> Home</a></span>
+                            </div>
+                            <hr>
+                        </div>
+                        <div class="button  about">
+                            <div class="left-side-button"><span><img class="png-img-small"
+                                        src="https://www.nicepng.com/png/full/235-2354657_pick-me-comments-me-icon-white-png.png"
+                                        alt=""></span>
+                                <span><a href="#about"> About</a></span>
+                            </div>
+                            <hr>
+                        </div>
+                        <div class="button  project">
+                            <div class="left-side-button"><span><img class="png-img-small"
+                                        src="https://cdn-icons-png.flaticon.com/512/1063/1063288.png" alt=""></span>
+                                <span><a href="#project"> Project</a></span></div>
+                            <hr>
+                        </div>
+                        <div class="button  contacts">
+                            <div class="left-side-button"><span><img class="png-img-small"
+                                        src="https://lh5.googleusercontent.com/proxy/N8zLk-caYHJV_jSTgzAKZuk0RQ9Zvwk8Hc1vrDEoALMlSiqWTiRUCCzocHHuMkSD852_xgtI1PN9HKWsrS5fxT8F8btMAM5GYpAfTlZC4w6hX8Zh1YcHKSs"
+                                        alt=""></span>
+                                <span><a href="#contact"> Contact</a></span>
+                            </div>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- left-box -->
+            <div class="left-sidebar">
+                <!-- center-box -->
+                <div class="first-header-one">
+                    <div class="my-namee">
+                        <div class="header-my-name">Arsalan Pathan</div>
+                    </div>
+                </div>
+                <div class="first-header-two">
+                    <div class="header-text">Home</div>
+                    <div class="header-text">About</div>
+                    <div class="header-text">Project</div>
+                    <div class="header-text">Contact</div>
+
+                </div>
+                <div class="center-box">
+                    <!-- center-child -->
+                    <div class="center-text">
+                        <div class="hello-name ">Hello, I'm <span class="my-name"><b>Arsalan Pathan</b></span><br></div>
+                        <div class="developer-text">I'm a Full Stack Developer</div>
+                        <div class="my-text"> I have completed HTML and
+                            CSS, which <br>help in creating and designing web pages. <br>
+                        </div>
+
+                        <!-- experianxe bar -->
+                        <div class="experiance">
+                            <div class="html experi">
+                                <div class="big-text">1</div><br>
+                                <div class="experiance-text">Project</div>
+                            </div>
+                            <div class="html my-project">
+                                <div class="big-text">4</div> <br>
+                                <div class="experiance-text">Month experience</div>
+                            </div>
+                            <div class="html clind">
+                                <div class="big-text">2</div> <br>
+                                <div class="experiance-text">Happy Client</div>
+                            </div>
+
+                        </div>
+                        <div class="very-small-img">
+                            <!-- small img -->
+                            <div class="small-img-section"><img class="small-img"
+                                    src="https://cdn-icons-png.freepik.com/256/12933/12933995.png?semt=ais_white_label"
+                                    alt=""><img class="small-img"
+                                    src="https://icons.veryicon.com/png/o/object/material_design_icons/github-circle-1.png"
+                                    alt=""><img class="small-img"
+                                    src="https://upload.wikimedia.org/wikipedia/commons/0/06/Linkedin_circle_black-512.png"
+                                    alt=""></div>
+                        </div>
+                    </div>
+
+                    <!-- My-img -->
+                    <div class="My-img"><img class="developer-img-H-W"
+                            src="https://www.shutterstock.com/image-vector/businessman-icon-260nw-564112600.jpg" alt="">
+                        <div class="my-namee"> Creative Developer</div>
+                    </div>
+                    <!-- experiance -->
+                </div>
+            </div>
+        </div>
+        <!-- about us page -->
+        <div class="second-page">
+            <!-- navigation-bar -->
+            <div class="right-sidebar-second" id="about"></div>
+            <!-- left sidebar -->
+            <div class="left-sidebar-second">
+                <!-- second-header -->
+                <div class="second-header">About Us
+                    <hr>
+                </div>
+                <!-- about-us -->
+                <div class="about-us">I am Arsalan Pathan Full Stack Developer trainee I have completed<br> learning
+                    HTML
+                    and CSS, which are the basic building blocks of web<br> development. HTML helps me create the
+                    structure
+                    of web pages and<br> CSS helps me style and design them to look attractive and user-friendly.
+                </div>
+                <div class="resume"> <button class="resume-button"> 🌟Resume</button> <button
+                        class="resume-contact-button">Contact</button></div>
+                <!-- my skill -->
+                <div class="my-skill">
+                    <div class=" my skill-card-one"><span><img class="skill-img"
+                                src="https://t3.ftcdn.net/jpg/05/15/64/04/360_F_515640411_OqqR0RBCCWu9zUlvcb7mBNuXEYIJnY3H.jpg"
+                                alt=""></span><br>
+                        <h3><b>HTML / CSS</b></h3>
+                        <h4>Table ,style </h4>
+                    </div>
+                    <div class=" my skill-card-two"><span><img class="skill-img"
+                                src="https://img.icons8.com/?size=80&id=67375&format=png" alt=""></span>
+                        <h3><b>Web Design</b></h3>
+                        <h4></h4>
+                    </div>
+                    <div class=" my skill-card-three"><span><img class="skill-img"
+                                src="https://www.kindpng.com/picc/m/476-4768341_javascript-logo-number-angularjs-node-javascript-transparent-background.png"
+                                alt=""></span>
+                        <h3><b>JS</b></h3>
+                        <h4>Syntax , Operator</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- project-page --------page three -->
+        <div class="project-main">
+            <!-- navigation bar -->
+            <div class="third-box-one"></div>
+            <!-- cards page -->
+            <div class="third-box-two">
+                <!-- header -->
+                <div class="third-header" id="project">My Project
+                    <hr>
+                </div>
+                <!--  all / project button -->
+                <div class="button-row"><button class="buttons">All</button><a href="./project-page.html"><button
+                            class="buttons">Assigment</button></a><a href="./live-project.html"><button class="buttons">
+                            live Project</button></a></div>
+            </div>
+        </div>
+        <!-- -------------project page page four--------------- -->
+        <!-- page-four -->
+        <div class="fourth-main">
+            <!-- navigation -->
+            <div class="fourth-box-one"></div>
+            <!-- left side bar -->
+            <div class="fourth-box-two">
+
+                <!-- first card-->
+                <div class="fourth-row-one">
+                    <div class=" fourth-four-one ">
+                        <div class="fourth-card-header"><img class="all-img"
+                                src="https://images.pexels.com/photos/260024/pexels-photo-260024.jpeg" alt=""></div>
+                        <div class="fourth-card-footer"><a href="./fortfolio-pages.html/new-chess.html"><button
+                                    class="view-button">View Project</button></a></div>
+                    </div>
+                    <!-- second -->
+                    <div class=" fourth-four-two ">
+                        <div class="fourth-card-header"><img class="all-img"
+                                src="https://img.freepik.com/free-photo/top-view-calculator-notebook-frame_23-2149103980.jpg?semt=ais_hybrid&w=740&q=80"
+                                alt=""></div>
+                        <div class="fourth-card-footer"><a href="./fortfolio-pages.html/calculator.html"><button
+                                    class="view-button">View Project</button></a></div>
+                    </div>
+                    <!-- third -->
+                    <div class=" fourth-four-three">
+                        <div class="fourth-card-header"><img class="all-img"
+                                src="https://st2.depositphotos.com/5332300/8087/v/950/depositphotos_80879864-stock-illustration-periodic-table-of-the-elements.jpg"
+                                alt=""></div>
+                        <div class=" fourth-card-footer"><a href="./fortfolio-pages.html/periodic table.HTML"><button
+                                    class="view-button"> View Project</button></a></div>
+                    </div>
+                </div>
+                <div class="fourth-row-one">
+                    <!-- card-child -->
+                    <div class=" fourth-four-one ">
+                        <div class="fourth-card-header"><img class="all-img"
+                                src="https://www.pngitem.com/pimgs/m/465-4658380_online-school-admission-form-with-custom-design-online.png"
+                                alt=""></div>
+                        <div class="fourth-card-footer"><a href="./fortfolio-pages.html/new-form.html"><button
+                                    class="view-button">View Project</button></a></div>
+                    </div>
+                    <!-- second -->
+                    <div class=" fourth-four-two ">
+                        <div class="fourth-card-header"><img class="all-img"
+                                src="https://www.shutterstock.com/image-vector/business-price-chart-template-web-260nw-2103542042.jpg"
+                                alt=""></div>
+                        <div class="fourth-card-footer"><a href="./new-table.html"><button class="view-button">View
+                                    Project</button></a></div>
+                    </div>
+                    <!-- third -->
+                    <div class=" fourth-four-three">
+                        <div class="fourth-card-header"><img class="all-img"
+                                src="https://us.123rf.com/450wm/ganpanjaneedesign/ganpanjaneedesign2402/ganpanjaneedesign240200032/227791322-calendario-de-escritorio-2025-dise%C3%B1o-junio-2025-plantilla-calendario-2025-plantilla-planificador.jpg?ver=6"
+                                alt=""></div>
+                        <div class=" fourth-card-footer"><a href="./fortfolio-pages.html/calender.html"><button
+                                    class="view-button"> View Project</button></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- fourth project page -->
+        <div class="fourth-main">
+            <!-- navigation -->
+            <div class="fourth-box-one"></div>
+            <!-- left box -->
+            <div class="fourth-box-two">
+                <div class="four-row-one">
+                    <!-- first -->
+                    <div class="fourth-row-one">
+                        <div class=" fourth-four-one ">
+
+                            <div class="fourth-card-header"><img class="all-img"
+                                    src="https://blog.pixelfreestudio.com/wp-content/uploads/2024/07/moodboard-template-photo-collage-layout-minimalist-moodboard-vector-1024x587.jpg"
+                                    alt=""></div>
+                            <div class="fourth-card-footer"><a href="./fortfolio-pages.html/layout.html"><button
+                                        class="view-button">View Project</button></a></div>
+                        </div>
+                        <!-- second -->
+                        <div class=" fourth-four-two ">
+                            <div class="fourth-card-header"><img class="all-img"
+                                    src="https://img.freepik.com/premium-photo/cricket-player-batting-action-clipartcricket-player-playing-cricket-vector-illustration_1276103-229.jpg?semt=ais_hybrid&w=740&q=80"
+                                    alt=""></div>
+                            <div class="fourth-card-footer"><a href="./fortfolio-pages.html/new-cricket.html"><button
+                                        class="view-button">View Project</button></a></div>
+                        </div>
+                        <!-- third -->
+                        <div class=" fourth-four-three">
+                            <div class="fourth-card-header"><img class="all-img"
+                                    src="https://images.pexels.com/photos/572056/pexels-photo-572056.jpeg?cs=srgb&dl=pexels-serpstat-177219-572056.jpg&fm=jpg"
+                                    alt=""></div>
+                            <div class=" fourth-card-footer"><a href="./fortfolio-pages.html/computer.html"><button
+                                        class="view-button">View Project</button></a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="four-row-two">
+                    <div class="fourth-row-one">
+                        <!-- card-child -->
+                        <div class=" fourth-four-one ">
+                            <div class="fourth-card-header"><img class="all-img"
+                                    src="https://www.shutterstock.com/image-vector/modern-technology-abstract-creative-dynamin-260nw-2513638817.jpg"
+                                    alt=""></div>
+                            <div class="fourth-card-footer"><a href="./fortfolio-pages.html/web-layout.html"><button
+                                        class="view-button">View Project</button></a></div>
+                        </div>
+                        <!-- second -->
+                        <div class=" fourth-four-two ">
+                            <div class="fourth-card-header"><img class="all-img"
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR29hGElDXyuQfSP_yVuaWPhkK5eT9qV7dZSQ&s"
+                                    alt="">
+                            </div>
+                            <div class="fourth-card-footer"><a href="./fortfolio-pages.html/login-form.html"><button
+                                        class="view-button">View Project</button></a></div>
+                        </div>
+                        <!-- third -->
+                        <div class=" fourth-four-three">
+                            <div class="fourth-card-header"><img class="all-img"
+                                    src="https://cdn.educba.com/academy/wp-content/uploads/2023/07/Basic-HTML-Tags2-1.jpg"
+                                    alt=""></div>
+                            <div class=" fourth-card-footer"><a href="./fortfolio-pages.html/"></a><button
+                                    class="view-button">View Project</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- -------contact section------------- -->
+        <div class="fifth-main">
+            <!-- navigation bar -->
+            <div class="fifth-box-one"></div>
+            <!-- left box -->
+            <div class="fifth-box-two">
+                <!-- contact header -->
+                <div class="contact-header" id="contact">Contact Us
+                    <hr>
+                </div>
+                <!-- fifth row one -->
+                <div class="fifth-row onee">
+                    <!-- address -->
+                    <div class="contact address">
+                        <div class="c-image"><img class="contact-img"
+                                src="https://cdn-icons-png.flaticon.com/512/25/25694.png" alt=""></div>
+                        <div class="c-text">
+                            <div class="top">Address</div>
+                            <div class="bottom">Nagpur,India</div>
+                        </div>
+                    </div>
+                    <!-- email -->
+                    <div class="contact email">
+                        <div class="c-image"><img class="contact-img"
+                                src="https://lh5.googleusercontent.com/proxy/N8zLk-caYHJV_jSTgzAKZuk0RQ9Zvwk8Hc1vrDEoALMlSiqWTiRUCCzocHHuMkSD852_xgtI1PN9HKWsrS5fxT8F8btMAM5GYpAfTlZC4w6hX8Zh1YcHKSs"
+                                alt=""></div>
+                        <div class="c-text">
+                            <div class="top">Contact</div>
+                            <div class="bottom">+ (91) 9370390348 </div>
+                        </div>
+                    </div>
+                    <!-- phone -->
+                    <div class="contact phone">
+                        <div class="c-image"><img class="contact-img"
+                                src="https://static.vecteezy.com/system/resources/previews/020/009/614/non_2x/email-and-mail-icon-black-free-png.png"
+                                alt=""></div>
+                        <div class="c-text">
+                            <div class="top">Email</div>
+                            <div class="bottom">pathansohal68@gmail.com</div>
+                        </div>
+                    </div>
+                    <!-- gethub -->
+                    <div class="contact gethub">
+                        <div class="c-image"><img class="contact-img"
+                                src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt=""></div>
+                        <div class="c-text">
+                            <div class="top">Github</div>
+                            <div class="bottom">View Github Profile</div>
+                        </div>
+                    </div>
+                    <!-- linkdein -->
+                    <div class="contact linkdein">
+                        <div class="c-image"><img class="contact-img"
+                                src="https://upload.wikimedia.org/wikipedia/commons/0/06/Linkedin_circle_black-512.png"
+                                alt=""></div>
+                        <div class="c-text">
+                            <div class="top">linkedin</div>
+                            <div class="bottom">Conect to linkdin</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fifth-row-three">@ Arsalan AyyubKhan Pathan <br>2025 !</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

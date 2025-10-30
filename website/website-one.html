@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        /* main */
+        .main-container {
+            height: 100vh;
+            width: 100vw;
+            background-color: rgb(255, 255, 255);
+        }
+
+        .header {
+            height: 11%;
+            width: 90%;
+            background-color: rgba(255, 255, 255, 0);
+            margin-left: 70px;
+            position: fixed;
+            display: flex;
+            flex-direction: row;
+             border: 1px solid rgba(128, 128, 128, 0.309);
+        }
+
+        .sbox {
+            background-color:#F3F2EC;
+            height: 100%;
+            width: 13%;
+        }
+        
+        .bbox {
+            background-color:#F3F2EC;
+            height: 100%;
+            width: 63%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: last baseline;
+            gap: 40px;
+            font-size: 20px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+
+        }
+
+        .mbox {
+            background-color:#F3F2EC;
+            height: 100%;
+            width: 25%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        img {
+            padding-left: 10px;
+            padding-top: 13px;
+            width: 110px;
+
+        }
+
+        button {
+            width: 230px;
+            height: 40px;
+            font-size: 17px;
+            border-radius: 20px;
+            color: white;
+            background-color: tomato;
+            border: none;
+        }
+
+        .search {
+
+            height: 30px;
+            width: 30px;
+        }
+
+        /* first-page-main */
+        .main {
+            height: 60%;
+            width: 100%;
+            background-color: rgb(255, 255, 255);
+            margin-top: 6.8%;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .left-sidebar {
+            height: 100%;
+            width: 60%;
+            background-color: rgb(255, 255, 255);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: #44444E;
+        }
+
+        .right-sidebar {
+            height: 100%;
+            width: 40%;
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .right-sidebar-1 {
+            position: absolute;
+            height: 80%;
+            width: 100%;
+            z-index: 1;
+            margin-left: 10%;
+
+        }
+
+        .right-sidebar-2 {
+
+
+            height: 20%;
+            width: 100%;
+            margin-left: 11%;
+            margin-top: 30px;
+            position: relative;
+            animation: mymove 6s infinite;
+
+        }
+
+        @keyframes mymove {
+            0% {
+                top: 0px;
+            }
+
+            25% {
+                top: 50px;
+            }
+
+            75% {
+                top: 0px
+            }
+
+
+        }
+
+        .img-2 {
+            height: 400px;
+            width: 300px;
+        }
+
+        .img-3 {
+            height: 350px;
+            width: 400px;
+        }
+
+        b {
+            font-size: 60px;
+            margin-left: 90px;
+        }
+
+        .first-footer {
+            height: 10%;
+            width: 100%;
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+
+        }
+
+        .small-img {
+            width: 200px;
+
+        }
+
+        /* second-page */
+        .second-main {
+            height: 60%;
+            width: 100%;
+            background-color: rgb(255, 255, 255);
+        }
+
+        /* second-1-header */
+        .text-long {
+            background-color: #4A9782;
+            color: white;
+            width: 35%;
+            margin-left: 35%;
+            border-radius: 4px;
+            height: 30px;
+        }
+
+        /* second-2-center */
+        .center-box {
+            font-size: 38px;
+            padding-left: 300px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: #44444E;
+        }
+
+        .second-footer {
+            padding-left: 35%;
+            font-size: 16px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: rgb(101, 101, 101);
+        }
+
+        /* third-page */
+        .third-main {
+            height: 70%;
+            width: 100%;
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            flex-direction: row;
+            padding-left: 7%;
+            /* justify-content: space-evenly; */
+        }
+
+        .box-1 {
+            height: 100%;
+            width: 45%;
+            background-color: rgb(255, 255, 255);
+        }
+
+        .box-2 {
+            height: 100%;
+            width: 39%;
+            background-color: rgb(255, 255, 255);
+        }
+
+        .box-2-1 {
+            height: 13%;
+            width: 100%;
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            flex-direction: row;
+        }
+
+        .box-2-1-1 {
+            height: 100%;
+            width: 30%;
+            background-color: #ffffff;
+        }
+
+        .box-2-1-2 {
+            height: 100%;
+            width: 70%;
+            background-color: rgb(255, 255, 255);
+
+        }
+
+        .text-small {
+            width: 90px;
+            border-radius: 7px;
+            height: 28px;
+        }
+
+        input {
+            width: 40%;
+            height: 30px;
+        }
+
+        .sohail {
+            height: 15px;
+            width: 15px;
+        }
+
+        /* fourth-page */
+        .fourth-main {
+            height: 80%;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            background-color: rgba(192, 192, 192, 0.058);
+
+
+        }
+
+        .boxx-1 {
+
+            background-color: black;
+            background-image: url(https://media.istockphoto.com/id/1390242644/photo/smiling-people-in-the-meeting-room-using-a-laptop-searching-s.jpg?s=612x612&w=0&k=20&c=DtQoaRXByFbFNUXk1ZNIeWuQhTzKjsyC-1PeyenkfcE=);
+            background-position: center;
+            background-size: cover;
+            width: 40%;
+            height: 90%;
+            transition: width 2s, height 2s, transform 2s;
+            margin-left: 7%;
+
+        }
+/* hover in img */
+/* no transform */
+        .boxx-1:hover {
+
+            height: 540px;
+            width: 540px;
+            /* transform: rotate(360deg); */
+
+        }
+
+        .boxx-2 {
+            height: 90%;
+            width: 40%;
+            background-color: #ffffff;
+            border: 2px solid rgb(216, 216, 216);
+            border-radius: 15px;
+            /* position: fixed; */
+        }
+
+        .vicky {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin-left: 60px;
+            color: rgb(167, 167, 167);
+
+        }
+
+        .fifth-main {
+            height: 90%;
+            width: 100%;
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .school-1 {
+            height: 20%;
+            width: 100%;
+            background-color: #ffffff;
+        }
+
+        .school-2 {
+            height: 80%;
+            width: 100%;
+            background-color: #f9ffff;
+            display: flex;
+            flex-direction: row;
+            margin-left: 8%;
+            gap: 3%;
+        }
+
+        .school-2-1 {
+            height: 100%;
+            width: 25%;
+            background-color: rgb(255, 255, 255);
+            border-radius: 12px;
+        }
+
+        .school-2-2 {
+            height: 100%;
+            width: 25%;
+            background-color: rgb(255, 255, 255);
+            border-radius: 12px;
+        }
+
+        .school-2-3 {
+            height: 100%;
+            width: 25%;
+            background-color: rgb(255, 255, 255);
+            border-radius: 12px;
+        }
+
+        .icon {
+            height: 15%;
+            width: 20%;
+            margin-left: 35%;
+
+        }
+
+        /* six-main */
+        .sixth-main {
+            height: 100%;
+            width: 100%;
+            background-color: #2F8886;
+            display: flex;
+            flex-direction: column;
+
+
+        }
+
+        .class-1 {
+            height: 75%;
+            width: 100%;
+            background: linear-gradient(#ff8040e1, #2f8886a8);
+
+        }
+
+        .class-2 {
+            height: 25%;
+            width: 100%;
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+
+
+        }
+
+        .class-2-1 {
+            height: 100%;
+            width: 30%;
+
+
+        }
+
+        .class-2-2 {
+            height: 100%;
+            width: 30%;
+        }
+
+        .class-2-3 {
+            height: 100%;
+            width: 30%;
+
+        }
+
+        .DSP {
+            height: 100%;
+            width: 100%;
+        }
+
+        /* seven-page */
+        .seven-main {
+            height: 70%;
+            width: 100%;
+            background-color: #ffffff;
+            display: flex;
+            flex-direction: row;
+            padding-top: 10%;
+            padding-left: 10%;
+            gap: 5%;
+        }
+
+        .page-1 {
+            height: 97%;
+            width: 38%;
+            background-color: #ffffff;
+            border-radius: 13px;
+
+            border: 2px solid rgba(180, 180, 180, 0.281);
+        }
+
+        .page-2 {
+            height: 65%;
+            width: 37%;
+            background-color: #ffffff1e;
+            margin-top: 5%;
+            border-radius: 17px;
+
+            border: 1px solid rgba(128, 128, 128, 0.28);
+        }
+
+        .eight-main {
+            height: 70%;
+            width: 100%;
+            background: linear-gradient(rgba(255, 208, 216, 0.147), rgba(255, 247, 184, 0.238));
+            padding-top: 5%;
+            padding-left: 10%;
+        }
+
+        .eight-1 {
+            height: 93%;
+            width: 80%;
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            flex-direction: row;
+            border-radius: 10px;
+
+            gap: 1%;
+        }
+
+        .eight-1-1 {
+            height: 50%;
+            width: 40%;
+            background-color: rgb(255, 255, 255);
+            margin-top: 10%;
+            margin-left: 5%;
+        }
+
+        .eight-1-2 {
+            height: 60%;
+            width: 65%;
+            background-color: rgb(255, 255, 255);
+            margin-left: 10%;
+            margin-top: 7%;
+            margin-left: 5%;
+        }
+
+        /* last-box */
+        .l-main {
+            height: 70%;
+            width: 100%;
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .l-header {
+            height: 10%;
+            width: 100%;
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            flex-direction: row;
+        }
+
+        .l-center-1 {
+            height: 100%;
+            width: 20%;
+            background-color: rgb(255, 255, 255);
+            margin-left: 3%;
+
+        }
+
+        .l-center-2 {
+            height: 70%;
+            width: 20%;
+            background-color: rgb(255, 255, 255);
+            margin-left: 50%;
+
+        }
+
+        .l-center {
+
+            height: 100%;
+            width: 100%;
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            flex-direction: row;
+            gap: 3%;
+        }
+
+        .l-main-1 {
+            height: 90%;
+            width: 27%;
+            background-color: rgb(255, 255, 255);
+            margin-left: 20%;
+            margin-top: 3%;
+            border-radius: 5%;
+            border: 2px solid rgba(128, 128, 128, 0.296);
+
+        }
+
+        .l-main-2 {
+            height: 80%;
+            width: 26%;
+            background-color: rgb(255, 255, 255);
+            margin-top: 3%;
+            border-radius: 5%;
+            border: 2px solid rgba(128, 128, 128, 0.295);
+
+
+        }
+
+
+
+        .dspdsp {
+            height: 30px;
+            width: 25px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- main -->
+    <div class="main-container">
+        <br>
+        <!-- header -->
+        <div class="header">
+            <div class="sbox"><img src="https://brandcurb.com/wp-content/uploads/brandcurb-logo.webp" alt=""></div>
+            <!-- header --text-->
+            <div class="bbox">
+                <div class="name">Website</div>
+                <div class="name">SEO</div>
+                <div class="name">Branding</div>
+                <div class="name">PPC</div>
+                <div class="name">About </div>
+                <div class="name">Blog</div>
+                <div class="name">Contact </div>
+                <div class="name"> <img class="search "
+                        src="https://www.iconpacks.net/icons/2/free-search-icon-2903-thumb.png" alt=""></div>
+                <div class="name"><img class="search" src="https://static.thenounproject.com/png/4020631-200.png"
+                        alt=""></div>
+            </div>
+            <div class="mbox"><button>Book a free Consulation</button></div>
+        </div>
+        <!-- main -->
+        <div class="main">
+            <!-- left-sodebar -->
+            <div class="left-sidebar"> <br> <br> <b>Complete Web Design <br><b> & Development</b></b>
+                <br> <br>
+                <h2 style="margin-left: 90px;">Say goodbye to sleepless nights over counterproductive <br>
+                    communications between service
+                    providers, and no more overbilling- <br>related nightmares for services youre not sure you need but
+                    youre
+                    sure <br> you have to pay for.</h2>
+                <br>
+                <pre><button style="background-color:#4A9782    ;margin-left:10%;width:20%; height: 50px; border-radius: 30px;">View pracing</button><button style="background-color: tomato; margin-left: 2%; width: 35%; height: 50px; border-radius: 30px;"> 📞 Book a free consulation</button> </pre>
+            </div>
+            <!-- right-sidebar- -->
+            <div class="right-sidebar">
+                <div class="right-sidebar-1"><img class="img-2"
+                        src="https://assets.brandcurb.com/img/az/web-design-development.webp" alt=""></div>
+                <div class="right-sidebar-2"><img class="img-3"
+                        src="https://assets.brandcurb.com/img/az/orange-blob.png" alt=""></div>
+            </div>
+        </div>
+        <!-- FIRST-FOOTER -->
+        <div class="first-footer">
+            <div><img style="height: 200px; width: 200px;"
+                    src="https://assets.brandcurb.com/img/az/2016/04/lenikiko.webp" alt=""></div>
+            <div><img style="height: 200px; width: 200px;"
+                    src="https://assets.brandcurb.com/img/az/2016/04/branreluaoandassociates.webp" alt=""></div>
+            <div><img style="height: 200px; width: 200px;"
+                    src="https://assets.brandcurb.com/img/az/2016/04/protostarter.webp" alt="">
+            </div>
+            <div><img style="height: 200px; width: 200px;"
+                    src="https://assets.brandcurb.com/img/az/2016/04/slyr_games.webp" alt=""></div>
+            <div><img style="height: 200px; width: 200px;"
+                    src="https://assets.brandcurb.com/img/az/2016/04/sogbuyan-logo.webp" alt="">
+            </div>
+
+        </div>
+        <br><br><br><br><br><br><br><br>
+        <!-- second-main-page -->
+        <!-- second-1-header -->
+        <div class="second-main">
+            <button class="text-long">custom vibe design & Development Packages for Your Business</button>
+            <br><br> <br>
+            <!-- center-box -->
+            <!-- second-2-center -->
+            <div class="center-box">
+                Choose the Perfect <u> Website Solution</u> for Your Business
+            </div>
+            <br><br>
+            <!-- second-footer -->
+            <div class="second-footer">At BrandCurb, we understand that every business is unique, which is <br> <br> why
+                we offer
+                custom web design and development packages that <br> <br> are tailored to your specific needs. Our team
+                of
+                experienced designers <br> <br> and developers work closely with you to create a website that is not
+                <br><br> only visually
+                stunning but also functional and user-friendly. From e- <br><br> commerce sites to custom CMS builds,
+                our packages
+                are designed to <br><br> meet your specific requirements and budget.
+            </div>
+        </div>
+        <!-- third-page -->
+        <div class="third-main">
+            <!--first box -->
+            <div class="box-1"><button class="text-small">pricing</button>
+                <p
+                    style="font-size: 40px; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+                    Website Design & Development</p>
+                <p
+                    style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                    We offer comprehensive web design and development services that <br><br> are tailored to meet the
+                    unique needs of your business. Our team of <br><br> experienced designers and developers work
+                    closely with
+                    you to create <br><br> a website that not only looks great but also functions seamlessly. We <br>
+                    <br> focus on
+                    creating a user-friendly experience for your visitors, ensuring <br><br>that your website is easy to
+                    navigate and optimized for conversions.At <br> <br> BrandCurb, we take a collaborative approach to
+                    every
+                    project, <br><br> ensuring that we fully understand your business and your goals <br> <br> before we
+                    begin. Whether
+                    you're looking to launch a new website <br><br> or redesign an existing one, we are here to help you
+                    achieve
+                    your online <br><br>objectives. Contact us today to learn more about our web design and
+                    <br><br>development services
+                    and how we can help your business succeed online.
+                </p>
+            </div>
+            <!-- second-box -->
+            <div class="box-2">
+                <div class="box-2-1">
+                    <div class="box-2-1-1"> <br>
+                        <h2 style="margin-left: 39px; border-radius: 12%;">Packing</h2>
+                    </div>
+                    <div class="box-2-1-2"> <br><br><select style="width: 70%; height: 56%; font-size: 20px;">
+                            <option value="">Choose an option</option>
+                            <option value="">Premium</option>
+                            <option value="">Ultimate</option>
+                            <option value="">Essential</option>
+                        </select></div>
+                </div>
+                <br>
+                <hr>
+                <br>
+                <button class="text-4" style="background-color: gray; width: 26%; border-radius: 5PX;">SING UP
+                    NOW</button>
+                <br>
+                <br>
+                <button class="text-5"
+                    style="width: 65%;height: 20px; border-radius: 3px; margin-left: 24%; background-color: #4A9782;">HAVE
+                    QUESTION ABOUT OUR PRINCING.?</button>
+                <br>
+                <br>
+                <pre> <p style="padding-left: 40px; color: gray; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;">Well help you choose the package that's right for your business  <br><br>and  answer any questions you ma have. Don't wait, schedule your <br><br>                                      consultation now.</p></pre>
+                <br><br>
+                <b style="font-size: 20px; color: gray;"> Share this: </b><img class="sohail"
+                    src="https://cdn-icons-png.flaticon.com/512/733/733635.png" alt=""><img class="sohail"
+                    src="https://img.icons8.com/ios11/512/facebook-new.png" alt=""> <img class="sohail"
+                    src="https://i.pinimg.com/564x/16/05/cd/1605cd36a25c98249cf421b145690992.jpg" alt="">
+            </div>
+        </div>
+        <br><br><br><br><br>
+        <!-- fourth-page -->
+        <div class="fourth-main">
+            <div class="boxx-1">
+                <h1 style="padding-top: 53%; padding-left: 5%; color: rgb(255, 255, 255);">Did you Know ?</h1>
+
+                <p style="margin-left: 5%; font-size: 25px; color: rgb(255, 255, 255);"> 38 percent of visitors will
+                    stop engaging with a <br> website if the content or layout is unattractive <br>
+                    Blue Corona</p><button style="margin-left: 5%;background-color: #4A9782; border-radius: 20px; "> 📞
+                    Book a free consulation</button>
+            </div>
+            <div class="boxx-2"><button
+                    style="border-radius: 0%;margin-left: 33%; background-color: rgba(128, 128, 128, 0.485); color: rgb(255, 255, 255); height: 25px; width: 32%; ">
+                    Unlimited Possibilities</button>
+                <pre> <h1 style="margin-left: 15%; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"><u>Web Design</u>-related Issues  <br>              <u> Resolved</u></h1></pre>
+
+                <p class="vicky">The overall design is blah and generic. You don’t agree with <br> <br> the tabs, it’s
+                    kind of confusing. You
+                    don’t get how this site will <br><br> help your business grow. To top everything off, you are <br>
+                    <br> overwhelmed by
+                    the number of designers and programmers <br><br>pitching in to help you with specific areas of your
+                    website.
+                    Fret <br><br> not, BrandCurb has arrived. <br><br><br>
+
+                    With BrandCurb, you don’t need to look and pay for separate <br><br> experts who can help you fix
+                    your page.
+                    We are known for <br><br> helping businesses grow by ensuring that their WordPress <br><br> and
+                    WooCommerce website.
+                </p>
+            </div>
+
+        </div>
+        <!-- fifth-page -->
+        <br><br><br><br><br>
+        <div class="fifth-main">
+            <!-- fifth-header -->
+            <div class="school-1"><button
+                    style="width: 30%; margin-left: 34%; border-radius: 0%;height: 13%;">Customized Strategies and
+                    Results-Driven Solutions</button> <br>
+                <h1 style="margin-left: 40%;color: #44444E;">Why BrandCurb?</h1>
+                <h3
+                    style="margin-left: 30%; color:#44444E; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                    Our Expertise and Commitment to Your Success Sets Us Apart</h3>
+            </div>
+
+            <!-- fifth-main -->
+            <div class="school-2">
+                <div class="school-2-1"><img class="icon" src="https://cdn-icons-png.flaticon.com/512/1177/1177568.png"
+                        alt=""> <br>
+                    <h1
+                        style="margin-left: 7%; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: #44444E;">
+                        Personalized <br>Business Package</h1>
+                    <p style="font-size: 22px; margin-left: 12%; color:#44444E;">Choose from a wide range of <br> web
+                        solutions that you need to <br> ensure effective, efficient, and <br>
+                        sustainable growth of your <br> business. BrandCurb works <br> on the smallest to largest detail
+                        of <br> your
+                        website---from mobile and <br> speed optimization, to landing <br> page designs, and even SEO
+                        <br>---basically,
+                        everything under the <br> digital sun!
+                    </p>
+                </div>
+                <div class="school-2-2"><img class="icon" src="https://cdn-icons-png.flaticon.com/512/123/123398.png"
+                        alt="">
+                    <br>
+                    <h1
+                        style="margin-left: 11%; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: #44444E;">
+                        Customized Approach</h1>
+                    <p style="font-size: 22px; margin-left: 12%; color:#44444E;">Clients from around the globe <br> have
+                        raved and benefited from <br> our responsive WordPress and <br> WooCommerce websites. These <br>
+                        SMEs are able
+                        to stand-up and <br> even surpass bigger and heavier <br> competition at a lower cost here <br>
+                        at
+                        BrandCurb---all because our <br> services are tailored and <br> uniquely-made for you and your
+                        <br> specific
+                        vision for your company.
+                    </p>
+                </div>
+                <div class="school-2-3"><img class="icon" src="https://cdn-icons-png.flaticon.com/512/2913/2913133.png"
+                        alt="">
+                    <h1
+                        style="margin-left: 11%; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: #44444E;">
+                        Results-Driven Solutions</h1>
+                    <p style="font-size: 22px; margin-left: 12%; color:#44444E;">At BrandCurb, we are committed <br> to
+                        delivering measurable results <br> for our clients. We leverage the <br>latest technologies and
+                        <br> marketing
+                        tools to create data <br>-driven campaigns that are <br> optimized for performance and <br> ROI.
+                        Our team is
+                        constantly <br> monitoring and analyzing <br> campaign performance, making <br> adjustments as
+                        needed.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- six-main -->
+        <div class="sixth-main">
+            <div class="class-1"> <br><br><button
+                    style="border-radius: 2%;  height: 4%;width: 32% ; margin-left: 35%; background-color: #2F8886;">See
+                    How We've Helped Businesses Succeed Online</button>
+                <br><br>
+                <h1
+                    style=" font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; margin-left: 28%; color: white;">
+                    Our Website and Development Projects</h1>
+                <br>
+                <p
+                    style="color: white; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; margin-left: 28%;">
+                    At BrandCurb, we are proud of the websites and development projects we <br><br> have created for our
+                    clients.
+                    From e-commerce sites to custom CMS builds <br><br>, our team has the expertise and creativity to
+                    develop
+                    unique solutions that <br><br> meet our clients' needs. Browse through our portfolio to see examples
+                    of our <br><br>
+                    work and learn more about how we can help your business succeed online. <br><br> <br> <br>
+
+                    Ready to take your website to the next level? Contact us today to schedule a <br><br> consultation
+                    with one
+                    of our experts and learn how we can help you achieve <br><br> your online goals.
+
+                </p>
+
+
+                <h2 style="margin-left: 35%; color: white;">Book a free consulation Today ➡️</h2>
+            </div>
+            <div class="class-2">
+                <div class="class-2-1"><img class="DSP"
+                        src="https://assets.brandcurb.com/img/az/2020/08/mayor-aguinaldo-homepage-1536x731.jpg" alt="">
+                </div>
+                <div class="class-2-2"><img class="DSP"
+                        src="https://assets.brandcurb.com/img/az/2020/08/hvitality-homepage-1536x731.jpg" alt=""></div>
+                <div class="class-2-3"><img class="DSP"
+                        src="https://assets.brandcurb.com/img/az/2020/08/brandcurb-construction-1536x730.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- seven-page -->
+        <div class="seven-main">
+            <div class="page-1"><button
+                    style="margin-left: 33%; border-radius: 0%; height: 6%; width: 36%; background-color: rgb(175, 175, 175);">Unlimited
+                    Possibilities</button> <br><br>
+                <h1
+                    style="margin-left: 25%; color:#44444E; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; ">
+                    SMES <u>Web Design</u></h1><br>
+                <p
+                    style="margin-left: 6%;color: #44444E; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                    It is for these reasons that 90% of our clients from all over the <br> <br> world keep coming back!
+                    Just ask
+                    them! <br><br><br>
+
+                    Being a one-stop shop hub for digital communication and <br> <br> marketing isn’t BrandCurb’s claim
+                    to fame
+                    because we <br> <br> simply aren’t. However, we are known worldwide because our <br> <br> one-stop
+                    shop hub actually
+                    generates measurable results in <br> <br> branding, digital marketing, and website development, <br>
+                    <br> enabling
+                    effective, efficient, and sustainable growth in our<br> <br> clients’ businesses. Just look at the
+                    exponential growth in our<br> <br> current target markets in Toronto, the Philippines, and Japan!
+                </p>
+            </div>
+            <div class="page-2"><img style="margin-left: 33%; height: 40%;width: 30%;"
+                    src="https://static.vecteezy.com/system/resources/previews/020/986/884/non_2x/70-percent-filled-round-loading-bar-or-battery-charging-icon-progress-waiting-transfer-buffering-or-downloading-symbol-vector.jpg"
+                    alt="">
+                <br><br>
+                <p
+                    style="margin-left: 18%; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;color: #44444E;">
+                    “Given 15 minutes of time, 59 percent of people will <br><br> read or browse through something
+                    beautifully <br><br>
+                    designed rather than something plain and boring .” <br><br>
+                    –Adobe</p>
+            </div>
+        </div>
+        <!-- eight-page -->
+        <div class="eight-main">
+            <div class="eight-1">
+                <div class="eight-1-1"><button
+                        style="width: 37%; border-radius: 0; height: 8%; font-size: 12px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: #ffffff;">Our
+                        Clients Love Us</button>
+                    <h1
+                        style="color: rgb(162, 162, 162); font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                        Hear from Our Happy <br> Clients</h1>
+                    <h3
+                        style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color:rgb(160, 160, 160);">
+                        Take a look at the glowing reviews and <br>success stories
+                        from some of our <br> happy customers to see how <br> BrandCurb can help your business <br>
+                        achieve its goals. </h3>
+
+                    <button
+                        style="background-color: #2F8886; color: #ffffff; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; width: 35% ; color: white;">Contact
+                        Us ➡️</button>
+                </div>
+                <div class="eight-1-2"><img style="margin-left: 37%;"
+                        src="https://img.icons8.com/?size=512&id=17949&format=png" alt=""> <br>
+                    <h3 style="margin-left: 23px;  color: rgb(162, 162, 162)">Google was founded on September 4, 1998,
+                        by American computer
+                        scientists <br> Larr Page and
+                        Brin. Together, they own about 14% of its publicly shares and <br>control
+                        stockholder votingpower through super-voting stock The company went <br> public via an
+                        initial public offering (IPO) in 2004.<img style="margin-left: 39%; height: 15%;
+                        width: 20%;"
+                            src="   https://static.vecteezy.com/system/resources/thumbnails/013/743/771/small/five-stars-rating-icon-png.png"
+                            alt="">
+                        <h2 style="margin-left: 43%;">Alxander G.
+                            <h3 style="margin-left: 43%; color: rgb(162, 162, 162);">Via goofle.com</h3>
+                        </h2>
+                </div>
+
+            </div>
+        </div>
+        <!-- last-page -->
+        <div class="l-main">
+            <div class="l-header">
+                <div class="l-center-1">
+                    <h2>📞 Book a Free Consulation</h2>
+                </div>
+                <div class="l-center-2"><img class="dspdsp" src="https://cdn-icons-png.flaticon.com/512/733/733635.png"
+                        alt=""><img class="dspdsp" src="https://img.icons8.com/ios11/512/facebook-new.png" alt=""> <img
+                        class="dspdsp" src="https://i.pinimg.com/564x/16/05/cd/1605cd36a25c98249cf421b145690992.jpg"
+                        alt=""><img class="dspdsp"
+                        src="https://static.vecteezy.com/system/resources/previews/022/187/606/non_2x/map-location-pin-icon-free-png.png"
+                        alt="">
+                    <img class="dspdsp"
+                        src="https://icons.veryicon.com/png/o/miscellaneous/offerino-icons/instagram-53.png" alt="">
+                </div>
+            </div>
+            <br><br>
+            <div class="l-center">
+
+                <div class="l-main-1"><img style="margin-top: 15%; margin-left: 10%; "
+                        src="https://assets.brandcurb.com/img/az/brandcurb-logo.webp" alt="">
+                    <p
+                        style="margin-left: 11%; color: #44444E; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                        BrandCurb is a unified communications <br> <br>platform that empowers business owners <br> <br>
+                        and promotes
+                        business growth through <br> <br> services that strengthen brand identity <br><br> and
+                        sustainably promote online
+                        presence <br> <br>to increase engagement.</p>
+                        <br>
+                    <h2
+                        style="margin-left: 11%; color: #44444E; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                        Secure Payment</h2>
+                </div>
+
+                <div class="l-main-2">
+                    <h2
+                        style="margin-top: 13% ; margin-left: 30%; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: #44444E;">
+                        Contact Us</h2>
+                    <br>
+                    <section style="margin-left: 30%;">+ 9370390348</section> <br>
+                    <section
+                        style="margin-left: 30%; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: #44444E;">
+                        340 King Street East <br>
+                        Toronto, ON M5A 1K8</section> <br><img style="margin-left: 27% ; height: 40%; width: 40%; "
+                        src="https://www.gstatic.com/partners/badge/images/2023/PartnerBadgeClickable.svg" alt="">
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

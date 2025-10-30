@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0%;
+            padding: 0%;
+            overflow-x: hidden;
+        }
+
+        /* main-container */
+        .main-container {
+            height: 100vh;
+            width: 100vw;
+
+        }
+
+        /* first-main */
+        .first-main {
+            height: 100%;
+            width: 100%;
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            flex-direction: row;
+        }
+
+        /* right-side-bar */
+        .right-sidebar {
+            height: 100%;
+            width: 18%;
+            position: fixed;
+        }
+
+        /* enjoy programing img */
+        .right-center-box {
+            height: 100%;
+            width: 100%;
+            background-color: #DDF5F7;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* enjoy-programing--img */
+        .enjoy-programing-img {
+            height: 28%;
+            width: 90%;
+            background-color: #DDF5F7;
+            margin-top: 20px;
+            border-radius: 100%;
+            margin-left: 5%;
+        }
+
+        /*navigation-bar */
+        .navigation-bar {
+            height: 37%;
+            width: 60%;
+            background-color: rgb(98, 72, 149);
+            margin-left: 12%;
+            margin-top: 25%;
+        }
+
+        /* image */
+        .enjoy-cyrcle-img {
+            height: 100%;
+            width: 100%;
+            border-radius: 100%;
+        }
+
+        /* navigation button */
+        .button {
+            height: 25%;
+            width: 100%;
+        }
+
+        .png-img-small {
+            width: 15%;
+        }
+
+        .home {
+            background-color: #DDF5F7;
+        }
+
+        .about {
+            background-color: #DDF5F7;
+        }
+
+        .project {
+            background-color: #DDF5F7;
+        }
+
+        .contacts {
+            background-color: #DDF5F7;
+        }
+
+        /* button manage*/
+        .left-side-button {
+            margin-left: 10px;
+            font-size: 25px;
+           
+            text-align: center;
+        }
+
+        /* left-side-bar */
+        .left-sidebar {
+            height: 100%;
+            width: 82%;
+            background-color: #b1d5e6;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            left: 18%;
+        }
+
+        /* first-main-center-box */
+        .center-box {
+            height: 40%;
+            width: 80%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .center-box-one {
+            height: 100%;
+            width: 45%;
+            background-color: yellow;
+            transition-duration: 0.1s;
+            box-shadow: 0 0 15px #000000, 0 0 20px rgba(0, 170, 255, 0.5);
+        }
+
+
+
+        .center-box-two {
+            height: 100%;
+            width: 45%;
+            background-color: rgba(0, 0, 0, 0.361);
+            text-align: center;
+            color: white;
+            box-shadow: 0 0 15px #000000, 0 0 20px rgba(0, 170, 255, 0.5);
+
+        }
+
+        .all-img {
+            height: 100%;
+            width: 100%;
+        }
+
+        a {
+            text-decoration: none;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: rgb(0, 0, 0);
+        }
+
+        mark {
+            background-color: gold;
+            border-radius: 15px;
+        }
+
+        @media (min-width:300px) and (max-width:450px) {
+            body {
+                margin: 0%;
+                padding: 0%;
+                overflow-x: hidden;
+            }
+
+            /* main-container */
+            .main-container {
+                height: 100vh;
+                width: 100vw;
+
+            }
+
+            /* first-main */
+            .first-main {
+                height: 100%;
+                width: 100%;
+                background-color: rgb(255, 255, 255);
+                display: flex;
+                flex-direction: row;
+            }
+
+            /* right-side-bar */
+            .right-sidebar {
+                height: 100%;
+                width: 18%;
+                position: fixed;
+                display: none;
+            }
+
+            /* enjoy programing img */
+            .right-center-box {
+                height: 100%;
+                width: 100%;
+                background-color: #DDF5F7;
+                display: flex;
+                flex-direction: column;
+            }
+
+            /* enjoy-programing--img */
+            .enjoy-programing-img {
+                height: 28%;
+                width: 90%;
+                background-color: #DDF5F7;
+                margin-top: 20px;
+                border-radius: 100%;
+                margin-left: 5%;
+            }
+
+            /*navigation-bar */
+            .navigation-bar {
+                height: 37%;
+                width: 60%;
+                background-color: rgb(98, 72, 149);
+                margin-left: 12%;
+                margin-top: 25%;
+            }
+
+            /* image */
+            .enjoy-cyrcle-img {
+                height: 100%;
+                width: 100%;
+                border-radius: 100%;
+            }
+
+            /* navigation button */
+            .button {
+                height: 25%;
+                width: 100%;
+            }
+
+            .png-img-small {
+                width: 15%;
+            }
+
+            .home {
+                background-color: #DDF5F7;
+            }
+
+            .about {
+                background-color: #DDF5F7;
+            }
+
+            .project {
+                background-color: #DDF5F7;
+            }
+
+            .contacts {
+                background-color: #DDF5F7;
+            }
+
+            /* button manage*/
+            .left-side-button {
+                margin-left: 10px;
+                font-size: 25px;
+                opacity: 100%;
+                text-align: center;
+            }
+
+            /* hover */
+            .left-side-button:hover {
+                background-color: #ffffff;
+                border-radius: 15px;
+            }
+
+            /* left-side-bar */
+            .left-sidebar {
+                height: 100%;
+                width: 100%;
+                background-color: #b1d5e6;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                left: 0%;
+            }
+
+            /* first-main-center-box */
+            .center-box {
+                height: 80%;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                margin-left: 50px;
+            }
+
+            .center-box-one {
+                height: 100%;
+                width: 90%;
+                background-color: yellow;
+                transition-duration: 0.1s;
+                box-shadow: 0 0 15px #000000, 0 0 20px rgba(0, 170, 255, 0.5);
+
+            }
+
+
+
+            .center-box-two {
+                height: 100%;margin-top: 20px;
+                width: 90%;
+                background-color: rgba(0, 0, 0, 0.361);
+                text-align: center;
+                color: white;
+                box-shadow: 0 0 15px #000000, 0 0 20px rgba(0, 170, 255, 0.5);
+
+            }
+
+            .all-img {
+                height: 100%;
+                width: 100%;
+            }
+
+            a {
+                text-decoration: none;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                color: rgb(0, 0, 0);
+            }
+
+            mark {
+                background-color: gold;
+                border-radius: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="first-main">
+            <!-- sidebar -->
+
+            <div class="right-sidebar">
+
+                <div class="right-center-box">
+                    <div class="enjoy-programing-img"><img class="enjoy-cyrcle-img"
+                            src="https://pbs.twimg.com/profile_images/1829166084626210816/c6sR7XYC_400x400.png" alt="">
+                    </div>
+                    <!-- navigation bar -->
+                    <div class="navigation-bar">
+                        <div class="button home">
+                            <div class="left-side-button"><span><img class="png-img-small"
+                                        src="https://cdn-icons-png.flaticon.com/512/25/25694.png" alt=""></span>
+                                <span><a href="./index.html#home"> Home</a></span>
+                            </div>
+                            <hr>
+                        </div>
+                        <div class="button  about">
+                            <div class="left-side-button"><span><img class="png-img-small"
+                                        src="https://www.nicepng.com/png/full/235-2354657_pick-me-comments-me-icon-white-png.png"
+                                        alt=""></span>
+                                <span><a href="./index.html#about"> About</a></span>
+                            </div>
+                            <hr>
+                        </div>
+                        <div class="button  project">
+                            <div class="left-side-button"><span><img class="png-img-small"
+                                        src="https://cdn-icons-png.flaticon.com/512/1063/1063288.png"
+                                        alt=""></span> <span><a href="./index.html#project"> Project</a></span></div>
+                            <hr>
+                        </div>
+                        <div class="button  contacts">
+                            <div class="left-side-button"><span><img class="png-img-small"
+                                        src="https://lh5.googleusercontent.com/proxy/N8zLk-caYHJV_jSTgzAKZuk0RQ9Zvwk8Hc1vrDEoALMlSiqWTiRUCCzocHHuMkSD852_xgtI1PN9HKWsrS5fxT8F8btMAM5GYpAfTlZC4w6hX8Zh1YcHKSs"
+                                        alt=""></span>
+                                <span><a href="./index.html#contact"> Contact</a></span>
+                            </div>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- left-box -->
+            <div class="left-sidebar">
+                <div class="center-box">
+                    <div class="center-box-one"><img class="all-img"
+                            src="https://img1.wsimg.com/isteam/ip/577c6418-95d8-4526-a539-87102ff9829b/Projects%20Live%20Logo%20lrg-0001.png/:/cr=t:10%25,l:0%25,w:100%25,h:80%25/rs=w:1240,h:620,cg:true"
+                            alt=""></div>
+                    <div class="center-box-two">
+                        <h1>Cooming Soon !</h1>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>

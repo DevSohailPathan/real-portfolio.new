@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0%;
+            padding: 0%;
+            background-color: #1B3C53;
+
+        }
+
+        .main-container {
+            height: 100vh;
+            width: 100vw;
+            background-color: #1B3C53;
+        }
+
+        .header {
+            height: 5%;
+            width: 100%;
+            background-color: rgb(112, 127, 128);
+            color: rgb(255, 255, 255);
+            display: flex;
+            flex-direction: row;
+            position: fixed;
+            gap: 5%;
+            font-size: 30px;
+        }
+
+        .name {
+            padding-top: 6%;
+            font-size: 40px;
+            font-family: Courier;
+            color: rgb(240, 240, 240);
+          
+        }
+
+        .myname {
+            padding: 20%;
+            font-size: 40px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: rgb(240, 240, 240);
+        }
+
+        hr {
+            border-width: 5px;
+            border-color: black;
+        }
+
+        button {
+            margin-left: 70%;
+            font-size: 20px;
+        }
+
+        .school-1 {
+            height: 50%;
+            width: 100%;
+            background-color: rgb(0, 0, 0);
+            display: flex;
+            flex-direction: row;
+        }
+
+        .box-1 {
+            height: 100%;
+            width: 30%;
+            background-color: rgb(23, 32, 157);
+            opacity: 30%;
+        }
+
+        .box-1:hover {
+            opacity: 100%;
+        }
+
+        .box-2 {
+            height: 100%;
+            width: 70%;
+            background-color: rgb(195, 0, 255);
+            opacity: 30%;
+        }
+
+        .box-2:hover {
+            opacity: 100%;
+        }
+
+        .school-2 {
+            height: 50%;
+            width: 100%;
+            background-color: rgb(0, 0, 0);
+            display: flex;
+            flex-direction: row;
+
+        }
+
+        .box-3 {
+            height: 100%;
+            width: 70%;
+            background-color: aqua;
+            opacity: 30%;
+        }
+
+        .box-3:hover {
+            opacity: 100%;
+        }
+
+        .box-4 {
+            height: 100%;
+            width: 30%;
+            background-color: rgb(195, 0, 255);
+            opacity: 30%;
+        }
+
+        .box-4:hover {
+            opacity: 100%;
+        }
+
+        .school-3 {
+            height: 50%;
+            width: 100%;
+            background-color: rgb(0, 0, 0);
+            display: flex;
+            flex-direction: row;
+        }
+
+        .box-5 {
+            height: 100%;
+            width: 30%;
+            background-color: aqua;
+            opacity: 30%;
+        }
+
+        .box-5:hover {
+            opacity: 100%;
+        }
+
+        .box-6 {
+            height: 100%;
+            width: 70%;
+            background-color: rgb(195, 0, 255);
+            opacity: 30%;
+        }
+
+        .box-6:hover {
+            opacity: 100%;
+
+        }
+
+        .vicky {
+            color: rgb(0, 0, 0);
+            background-color: gray;
+            size: 30%;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            border-radius: 20px;
+        }
+
+        .school-4 {
+            height: 50%;
+            width: 100%;
+            background-color: rgb(0, 0, 0);
+            display: flex;
+            flex-direction: row;
+        }
+
+        .box-7 {
+            height: 100%;
+            width: 100%;
+            background-color: #1B3C53;
+            font-size: 40px;
+            color: aliceblue;
+            padding-left: 50px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .key {
+            margin-left: 40px;
+            color: rgb(0, 0, 0);
+            background-color: gray;
+            size: 30%;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            border-radius: 18px;
+        }
+
+        .school-5 {
+            height: 70%;
+            width: 100%;
+            background-color: rgb(0, 0, 0);
+            display: flex;
+            flex-direction: row;
+            border: 3px solid white;
+        }
+
+        .box-8 {
+            height: 100%;
+            width: 60%;
+            background-color: #415E72;
+
+
+        }
+
+        .box-9 {
+            height: 100%;
+            width: 40%;
+            background-color: #37586f;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid rgb(255, 255, 255);
+        }
+
+        .box9-1 {
+            height: 33%;
+            width: 100%;
+            background-color: #37586f;
+            border: 1px solid white;
+        }
+
+        .box9-2 {
+            height: 34%;
+            width: 100%;
+            background-color: #436b87;
+            border: 1px solid white;
+        }
+
+        .box9-3 {
+            height: 33%;
+            width: 100%;
+            background-color: #476278;
+            border: 1px solid white;
+        }
+
+        .box9-1-1 {
+            font-size: 30px;
+        }
+
+        .box9-1-2 {
+            font-size: 30px;
+        }
+
+        .box9-1-3 {
+            font-size: 30px;
+        }
+
+        a {
+            margin-left: 20%;
+            font-size: 20px;
+        }
+
+        .school-6 {
+            height: 10%;
+            width: 100%;
+            background-color: rgb(0, 0, 0);
+            display: flex;
+            flex-direction: row;
+        }
+
+        .box-10 {
+            height: 100%;
+            width: 100%;
+            background-color: #436b87;
+
+        }
+
+        .imag {
+            height: 100%;
+            width: 7%;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <!-- header -->
+        <div class="header">
+            <div class="home">Forty</div>
+            <div class="home">Desktop</div>
+            <div class="home">Tablet</div>
+            <div class="home">Tablet(Portrait)</div>
+            <div class="home">Mobile</div>
+        </div>
+        <div class="image"
+            style="background-image: url(./vecteezy_ai-generated-mountain-peak-silhouette-against-a-foggy-autumn_39620664.jpg)  ; height: 100%; width: 100%; background-position: center; background-size: cover; ">
+            <div class="name">FORTY BY HTML UP</div>
+            <div class="myname">Hi,my name is sohail
+                <hr>
+                <span style="font-size: 20px;">
+                    <div>A responsive site template designed by html 5 UP <br>
+                        and released under the Creative Commons.
+                    </div>
+                </span>
+                <!-- button -->
+                <button class="vicky">GET STARTED <img
+                        src="https://cdn11.bigcommerce.com/s-4nops3qe/images/stencil/1280x1280/products/14774/20182/m-m61-r-lg__47830.1511202397.gif?c=2"
+                        height="40px" width="40px"></button>
+            </div>
+            <!-- school-1 -->
+            <div class="school-1">
+                <div class="box-1"> <img src="./matt-sirr-qkqqZWm2kWc-unsplash.jpg" height="100%" width="100%"></div>
+                <div class="box-2"><img
+                        src="https://t4.ftcdn.net/jpg/03/21/49/17/240_F_321491746_tJimdq0ZS7F6wGKpaGOeL7EQjcdlaeqK.jpg   "
+                        height="100%" width="100%"></div>
+            </div>
+            <!-- school-3 -->
+            <div class="school-2">
+                <div class="box-3"> <img
+                        src="https://t3.ftcdn.net/jpg/01/80/83/76/360_F_180837604_UyJZNTHPluIJNQJjmTkCpE4XLJ03Zott.jpg"
+                        height="100%" width="100%"></div>
+                <div class="box-4"><img
+                        src="./vecteezy_portrait-of-a-wolf-in-the-forest-a-grey-wolf-staring-close_27004685.jpg"
+                        height="100%" width="100%"></div>
+            </div>
+            <!-- school-3 -->
+            <div class="school-3">
+                <div class="box-5"> <img src="https://vaptec.com/wp-content/uploads/2020/06/Elevators-Escalators.jpg"
+                        height="100%" width="100%"></div>
+                <div class="box-6"><img
+                        src="https://images.pexels.com/photos/1264210/pexels-photo-1264210.jpeg?cs=srgb&dl=pexels-andre-furtado-43594-1264210.jpg&fm=jpg"
+                        height="100%" width="100%"></div>
+            </div>
+            <br><br><br>
+            <!-- school-4 -->
+            <div class="school-4">
+                <div class="box-7"><u>Massa libero </u>
+                    <p style="font-size: 20px;">Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero.
+                        Mauris aliquet magna magna <br>
+                        sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas
+                        <br>
+                        laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat <br>
+                        tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet pharetra
+                        et <br>
+                        feugiat tempus.
+                        <!-- button -->
+                    </p> <button class="key">GET STARTED <img
+                            src="https://cdn11.bigcommerce.com/s-4nops3qe/images/stencil/1280x1280/products/14774/20182/m-m61-r-lg__47830.1511202397.gif?c=2"
+                            height="40px" width="40px"></button>
+                </div>
+            </div>
+            <!-- school-5 -->
+            <div class="school-5">
+                <div class="box-8">
+                    <br><br><br><br>
+                    <form style="font-size: 22px;padding-left: 30px; ">
+                        <pre> NAME.                       EMAIL. <br> <br> <input style="width: 40%; height: 50px;" type="text">   <input style="width: 40%; height: 50px;" type="text"></pre>
+                        <br>
+                        MESSAGE <br> <textarea></textarea>
+                        <br>
+                        <br>
+                        <!-- button -->
+                        <button style="color: gray; width: 25%; height: 50px;margin-left:0%; " .>SEND MESSAGE </button>
+                    </form>
+                </div>
+                <div class="box-9">
+                    <div class="box9-1"><br style="background-image: url(https://images.vexels.com/media/users/3/140131/isolated/svg/cc86a9f4ca65a140b2edadf3f87f2c17.svg  ) ; background-position: center; background-size: cover;">
+                            
+                            height="30%" width="20%"><span class="box9-1-1">Email</span> <br><a
+                            href="https://html5up.net/forty">information@united.tld </a></div>
+                    <div class="box9-2"><br><br><img style="margin-left: 5%;"
+                            src="https://pngimg.com/uploads/phone/small/phone_PNG48988.png" height="20%"
+                            width="10%"><span class="box9-1-1"> Phone</span> <br><a
+                            href="https://html5up.net/forty">(000)000-0000*12389</a></div>
+                    <div class="box9-3"><br><img style="margin-left: 5%;"
+                            src="https://static.thenounproject.com/png/2345212-200.png" height="20%" width="10%"><span
+                            class="box9-1-1">Address</span> <br><a href="https://html5up.net/forty">At.(Nagpur)
+                        </a></div>
+                </div>
+            </div>
+            <div class="school-6">
+                <div class="box-10">
+                    <!-- img-1 -->
+                    <img class="imag"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmhCavx3TVHbHNAUclWawGzs6eMGauobb3jQ&s"
+                        alt="">
+                    <!-- img-2 -->
+                    <img class="imag"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx_FFxS9qs_WbmFASyB9elnXWFIPGdoe9DgA&s"
+                        alt="">
+
+                    <!-- img-3 -->
+                    <img class="imag"
+                        src="https://cdn.vectorstock.com/i/500p/70/79/instagram-logo-black-outline-icon-ig-app-vector-56237079.jpg"
+                      
+                        alt="">
+                    <!-- img-4 -->
+                    <img class="imag" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4wcG5xnavVf5vrPCuU6c0xF60YptecS5vDg&s" alt="">
+                    <!-- img-5 -->
+                    <img class="imag" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtVSKyguCBJ47HD0Pi7xbJDBjbG4Nbe_s6Vg&s"
+                        alt="">
+                </div>
+                   <p></p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

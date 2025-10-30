@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0%;
+            padding: 0%;
+            overflow-x: hidden;
+        }
+
+        /* main-container */
+        .main-container {
+            height: 100vh;
+            width: 100vw;
+
+        }
+
+        /* first-main */
+        .first-main {
+            height: 100%;
+            width: 100%;
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            flex-direction: row;
+        }
+
+        /* right-side-bar */
+        .right-sidebar {
+            height: 100%;
+            width: 18%;
+            position: fixed;
+        }
+
+        /* enjoy programing img */
+        .right-center-box {
+            height: 100%;
+            width: 100%;
+            background-color: #DDF5F7;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* enjoy-programing--img */
+        .enjoy-programing-img {
+            height: 28%;
+            width: 90%;
+            background-color: #DDF5F7;
+            margin-top: 20px;
+            border-radius: 100%;
+            margin-left: 5%;
+        }
+
+        /*navigation-bar */
+        .navigation-bar {
+            height: 37%;
+            width: 60%;
+            background-color: rgb(98, 72, 149);
+            margin-left: 12%;
+            margin-top: 25%;
+        }
+
+        /* image */
+        .enjoy-cyrcle-img {
+            height: 100%;
+            width: 100%;
+            border-radius: 100%;
+        }
+
+        /* navigation button */
+        .button {
+            height: 25%;
+            width: 100%;
+        }
+
+        .png-img-small {
+            width: 15%;
+        }
+
+        .home {
+            background-color: #DDF5F7;
+        }
+
+        .about {
+            background-color: #DDF5F7;
+        }
+
+        .project {
+            background-color: #DDF5F7;
+        }
+
+        .contacts {
+            background-color: #DDF5F7;
+        }
+
+        /* button manage*/
+        .left-side-button {
+            margin-left: 10px;
+            font-size: 25px;
+            opacity: 100%;
+            text-align: center;
+        }
+
+     
+
+
+        /* left-side-bar */
+        .left-sidebar {
+            height: 100%;
+            width: 82%;
+            background-color: #b1d5e6;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            left: 18%;
+
+
+            /* header-one */
+        }
+
+        .header-one {
+            height: 7%;
+            width: 50%;
+            margin-top: 3%;
+            background-color: #b1d5e6;
+            margin-left: 23%;
+            text-align: center;
+            font-size: 35px;
+            font-family: cursive;
+            color: white;
+        }
+
+        /* first-main-center-box */
+        .center-box {
+            height: 80%;
+            width: 80%;
+            background-color: #b1d5e6;
+            display: flex;
+            flex-direction: column;
+            margin-left: 10%;
+            margin-top: 2%;
+            justify-content: space-between;
+        }
+
+        .row {
+            height: 45%;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .box {
+            background-color: #b1d5e6;
+        }
+
+        .boxx {
+            background-color: rgba(235, 150, 38, 0);
+        }
+
+        /* website */
+        .website {
+            height: 100%;
+            width: 45%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .one {
+            background-color: rgba(255, 0, 0, 0.552);
+            border: 2px solid rgb(5, 147, 218);
+            animation: mymove 5s infinite;
+
+        }
+
+        @keyframes mymove {
+            50% {
+                border-color: rgb(0, 93, 143);
+            }
+        }
+
+        .two {
+            background-color: rgba(255, 255, 255, 0.502);
+            border: 2px solid rgba(0, 17, 255, 0.891);
+            animation: mymove 5s infinite;
+
+        }
+
+        @keyframes mymove {
+            50% {
+                border-color: rgb(109, 167, 218);
+            }
+        }
+
+        /* child */
+        .image-web {
+            height: 85%;
+
+            width: 100%;
+            background-color: #C0D9E5;
+        }
+
+        .text-web {
+
+            height: 15%;
+            width: 100%;
+            ;
+            background-color: #c2faff;
+        }
+
+        /* all-img */
+        .all-img {
+            height: 90%;
+            margin-left: 5%;
+            margin-top: 3%;
+            width: 90%;
+
+        }
+
+        button {
+            height: 70%;
+            width: 40%;
+            border-radius: 15px;
+            margin-left: 30%;
+            margin-top: 5px;
+            background-color: #61a3c2;
+            border: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+        }
+
+        @media (min-width:300px) and (max-width:450px) {
+            body {
+                margin: 0%;
+                padding: 0%;
+                overflow-x: hidden;
+            }
+
+            /* main-container */
+            .main-container {
+                height: 150vh;
+                width: 100vw;
+
+            }
+
+            /* first-main */
+            .first-main {
+                height: 100%;
+                width: 100%;
+                background-color: rgb(255, 255, 255);
+                display: flex;
+                flex-direction: row;
+            }
+
+            /* right-side-bar */
+            .right-sidebar {
+                height: 100%;
+                width: 18%;
+                position: fixed;
+                display: none;
+            }
+
+            /* enjoy programing img */
+            .right-center-box {
+                height: 100%;
+                width: 100%;
+                background-color: #DDF5F7;
+                display: flex;
+                flex-direction: column;
+            }
+
+            /* enjoy-programing--img */
+            .enjoy-programing-img {
+                height: 28%;
+                width: 90%;
+                background-color: #DDF5F7;
+                margin-top: 20px;
+                border-radius: 100%;
+                margin-left: 5%;
+            }
+
+            /*navigation-bar */
+            .navigation-bar {
+                height: 37%;
+                width: 60%;
+                background-color: rgb(98, 72, 149);
+                margin-left: 12%;
+                margin-top: 25%;
+            }
+
+            /* image */
+            .enjoy-cyrcle-img {
+                height: 100%;
+                width: 100%;
+                border-radius: 100%;
+            }
+
+            /* navigation button */
+            .button {
+                height: 25%;
+                width: 100%;
+            }
+
+            .png-img-small {
+                width: 15%;
+            }
+
+            .home {
+                background-color: #DDF5F7;
+            }
+
+            .about {
+                background-color: #DDF5F7;
+            }
+
+            .project {
+                background-color: #DDF5F7;
+            }
+
+            .contacts {
+                background-color: #DDF5F7;
+            }
+
+            /* button manage*/
+            .left-side-button {
+                margin-left: 10px;
+                font-size: 25px;
+                opacity: 100%;
+                text-align: center;
+            }
+
+            /* hover */
+            .left-side-button:hover {
+                background-color: #ffffff;
+                border-radius: 15px;
+            }
+
+
+            /* left-side-bar */
+            .left-sidebar {
+                height: 100%;
+                width: 100%;
+                background-color: #b1d5e6;
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                left: 0%;
+
+
+                /* header-one */
+            }
+
+            .header-one {
+                height: 7%;
+                width: 50%;
+                margin-top: 3%;
+                background-color: #b1d5e6;
+                margin-left: 23%;
+                text-align: center;
+                font-size: 35px;
+                font-family: cursive;
+                color: rgb(0, 0, 0);
+            }
+
+            /* first-main-center-box */
+            .center-box {
+                height: 100%;
+                width: 100%;
+                background-color: #b1d5e6;
+                display: flex;
+                flex-direction: column;
+                margin-left: 14%;
+                margin-top: 4%;
+                justify-content: space-between;
+            }
+
+            .row {
+                height: 49%;
+                width: 100%;
+                display: flex;
+                flex-direction: column;  margin-top: 4%;
+                justify-content: space-between;
+            }
+
+            .box {
+                background-color: #b1d5e6;
+            }
+
+            .boxx {
+                background-color: rgba(235, 150, 38, 0);
+            }
+
+            /* website */
+            .website {
+                height: 100%;
+                width: 70%;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .one {
+                background-color: rgba(255, 0, 0, 0.552);
+                border: 2px solid rgb(5, 147, 218);
+                animation: mymove 5s infinite;
+
+            }
+
+            @keyframes mymove {
+                50% {
+                    border-color: rgb(0, 93, 143);
+                }
+            }
+
+            .two {
+                background-color: rgba(255, 255, 255, 0.502);
+                border: 2px solid rgba(0, 17, 255, 0.891);
+                animation: mymove 5s infinite;
+
+            }
+
+            @keyframes mymove {
+                50% {
+                    border-color: rgb(109, 167, 218);
+                }
+            }
+
+            /* child */
+            .image-web {
+                height: 85%;
+
+                width: 100%;
+                background-color: #C0D9E5;
+            }
+
+            .text-web {
+
+                height: 15%;
+                width: 100%;
+                ;
+                background-color: #c2faff;
+            }
+
+            /* all-img */
+            .all-img {
+                height: 90%;
+                margin-left: 5%;
+                margin-top: 3%;
+                width: 90%;
+
+            }
+
+            button {
+                height: 70%;
+                width: 40%;
+                border-radius: 15px;
+                margin-left: 30%;
+                margin-top: 5px;
+                background-color: #61a3c2;
+                border: none;
+            }
+
+            a {
+                text-decoration: none;
+                color: rgb(0, 0, 0);
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="first-main">
+            <!-- sidebar -->
+            <div class="right-sidebar">
+
+                <div class="right-center-box">
+                    <div class="enjoy-programing-img"><img class="enjoy-cyrcle-img"
+                            src="https://pbs.twimg.com/profile_images/1829166084626210816/c6sR7XYC_400x400.png" alt="">
+                    </div>
+                    <!-- navigation bar -->
+                    <div class="navigation-bar">
+                        <div class="button home">
+                            <div class="left-side-button"><span><img class="png-img-small"
+                                        src="https://cdn-icons-png.flaticon.com/512/25/25694.png" alt=""></span>
+                                <span><a href="./index.html"> Home</a></span>
+                            </div>
+                            <hr>
+                        </div>
+                        <div class="button  about">
+                            <div class="left-side-button"><span><img class="png-img-small"
+                                        src="https://www.nicepng.com/png/full/235-2354657_pick-me-comments-me-icon-white-png.png"
+                                        alt=""></span>
+                                <span><a href="#about"> About</a></span>
+                            </div>
+                            <hr>
+                        </div>
+                        <div class="button  project">
+                            <div class="left-side-button"><span><img class="png-img-small"
+                                        src="https://cdn-icons-png.flaticon.com/512/1063/1063288.png"
+                                        alt=""></span> <span><a href="#project"> Project</a></span></div>
+                            <hr>
+                        </div>
+                        <div class="button  contacts">
+                            <div class="left-side-button"><span><img class="png-img-small"
+                                        src="https://lh5.googleusercontent.com/proxy/N8zLk-caYHJV_jSTgzAKZuk0RQ9Zvwk8Hc1vrDEoALMlSiqWTiRUCCzocHHuMkSD852_xgtI1PN9HKWsrS5fxT8F8btMAM5GYpAfTlZC4w6hX8Zh1YcHKSs"
+                                        alt=""></span>
+                                <span><a href="#contact"> Contact</a></span>
+                            </div>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- left-box -->
+            <div class="left-sidebar">
+                <div class="header-one">Assignment</div>
+                <!-- main -->
+                <div class="center-box">
+                    <!--child  -->
+                    <div class="row box">
+                        <div class="website one">
+                            <div class="image-web"><img class="all-img"
+                                    src="https://png.pngtree.com/png-vector/20231223/ourmid/pngtree-project-management-building-up-png-image_10918849.png"
+                                    alt=""></div>
+                            <div class="text-web"><a href="./website/website-one.html"><button>View Project</button></a>
+                            </div>
+                        </div>
+                        <div class="website two">
+                            <div class="image-web"><img class="all-img"
+                                    src="https://png.pngtree.com/png-vector/20231223/ourmid/pngtree-project-management-building-up-png-image_10918849.png"
+                                    alt=""></div>
+                            <div class="text-web"><a href="./website/website-two.html"><button>View Project</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- child -->
+                    <div class="row boxx">
+                        <div class="website one">
+                            <div class="image-web"><img class="all-img"
+                                    src="https://png.pngtree.com/png-vector/20231223/ourmid/pngtree-project-management-building-up-png-image_10918849.png"
+                                    alt=""></div>
+                            <div class="text-web"><a href="./website/websit-three.html"><button>View
+                                        Project</button></a></div>
+                        </div>
+                        <div class="website two">
+                            <div class="image-web"><img class="all-img"
+                                    src="https://png.pngtree.com/png-vector/20231223/ourmid/pngtree-project-management-building-up-png-image_10918849.png"
+                                    alt=""></div>
+                            <div class="text-web"><a href="./PORTFOLIO/portfolio.html"><button>View Project</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
